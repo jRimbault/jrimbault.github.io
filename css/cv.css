@@ -583,12 +583,6 @@ p {
     border: 1px solid #ffffff;
 }
 
-.chip:hover {
-    color: #e06870;
-    background-color: #f8f9fa;
-    border: 1px solid #e06870;
-}
-
 /**
  * LaTeX style
  */
