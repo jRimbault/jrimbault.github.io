@@ -15,7 +15,7 @@
 }
 
 .cv-brand-color {
-    color: #e06870;
+    color: #e74430;
 }
 
 .cv-navbar {
@@ -70,7 +70,7 @@
 }
 
 .cv-sidebar .accordion .menu .menu-item>a:hover {
-    color: #e06870;
+    color: #e74430;
 }
 
 .cv-content {
@@ -90,7 +90,7 @@
 }
 
 .cv-content .anchor {
-    color: #e06870;
+    color: #e74430;
     height: 0;
     margin-left: -2em;
     overflow: hidden;
@@ -245,7 +245,7 @@
 }
 
 .cv-content .code .tag {
-    color: #e06870
+    color: #e74430
 }
 
 .cv-content .code .atn {
@@ -253,7 +253,7 @@
 }
 
 .cv-content .code .atv {
-    color: #e06870
+    color: #e74430
 }
 
 .cv-content .code[data-lang=Bash] .tag {
@@ -283,7 +283,7 @@
 .cv-content .example-tile-icon {
     align-content: space-around;
     align-items: center;
-    background: #e06870;
+    background: #e74430;
     border-radius: .1rem;
     color: #fff;
     display: flex;
@@ -321,7 +321,7 @@
 
 .cv-brand,
 a.cv-logo {
-    color: #e06870;
+    color: #e74430;
     left: 1.5rem;
     position: fixed;
     top: .85rem
@@ -383,7 +383,7 @@ a.cv-logo {
 }
 
 .section-hero .cv-brand h2 {
-    color: #e06870
+    color: #e74430
 }
 
 .section-hero .column {
@@ -452,7 +452,7 @@ a.cv-logo {
 }
 
 .grid-hero .card .card-title {
-    color: #e06870;
+    color: #e74430;
     font-size: .9rem;
     margin-bottom: 0
 }
@@ -554,7 +554,7 @@ a.cv-logo {
 }
 
 .btn.btn-link i.icon.icon-menu {
-    color: #e06870;
+    color: #e74430;
 }
 
 /* brand color on links */
@@ -563,7 +563,7 @@ a,
 a:active,
 a:focus,
 a:hover {
-    color: #e06870;
+    color: #e74430;
 }
 
 /* paragraph */
@@ -620,11 +620,11 @@ p {
 }
 
 .columns:hover .col-3 {
-    border-right-color: #e06870;
+    border-right-color: #e74430;
 }
 
 .columns:hover .col-3 .chip {
-    color: #e06870;
+    color: #e74430;
     background-color: #f8f9fa;
-    border: 1px solid #e06870;
+    border: 1px solid #e74430;
 }
