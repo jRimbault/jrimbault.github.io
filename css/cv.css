@@ -3,19 +3,23 @@
  * Based on Spectre.css Docs | MIT License | github.com/picturepan2/spectre
  */
 
+:root {
+    --brand-color: #e74430;
+}
+
 .off-canvas .off-canvas-toggle {
     font-size: 1rem;
     left: 1.5rem;
     position: fixed;
-    top: 1rem
+    top: 1rem;
 }
 
 .off-canvas .off-canvas-sidebar {
-    width: 12rem
+    width: 12rem;
 }
 
 .cv-brand-color {
-    color: #e74430;
+    color: var(--brand-color);
 }
 
 .cv-navbar {
@@ -23,13 +27,13 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 100
+    z-index: 100;
 }
 
 .cv-navbar .label {
     position: absolute;
     right: 1.5rem;
-    top: 1rem
+    top: 1rem;
 }
 
 .cv-sidebar .cv-nav {
@@ -39,27 +43,27 @@
     padding: .5rem 1.5rem;
     position: fixed;
     top: 3.5rem;
-    width: 12rem
+    width: 12rem;
 }
 
 .cv-sidebar .accordion {
-    margin-bottom: .75rem
+    margin-bottom: .75rem;
 }
 
 .cv-sidebar .accordion input~.accordion-header {
     color: #5b657a;
     font-size: .65rem;
     font-weight: 600;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .cv-sidebar .accordion input:checked~.accordion-header {
-    color: #667189
+    color: #667189;
 }
 
 .cv-sidebar .accordion .menu .menu-item {
     font-size: .7rem;
-    padding-left: 1rem
+    padding-left: 1rem;
 }
 
 .cv-sidebar .accordion .menu .menu-item>a {
@@ -70,27 +74,27 @@
 }
 
 .cv-sidebar .accordion .menu .menu-item>a:hover {
-    color: #e74430;
+    color: var(--brand-color);
 }
 
 .cv-content {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    width: calc(100vw - 12rem)
+    width: calc(100vw - 12rem);
 }
 
 .cv-content.off-canvas-content {
-    padding: 0 4rem
+    padding: 0 4rem;
 }
 
 .cv-content>.container {
     margin-left: 0;
     max-width: 800px;
-    padding-bottom: 1.5rem
+    padding-bottom: 1.5rem;
 }
 
 .cv-content .anchor {
-    color: #e74430;
+    color: var(--brand-color);
     height: 0;
     margin-left: -2em;
     overflow: hidden;
@@ -98,7 +102,7 @@
     position: absolute;
     text-align: center;
     width: 0;
-    z-index: 100
+    z-index: 100;
 }
 
 .cv-content .anchor:focus,
@@ -106,7 +110,7 @@
     box-shadow: none;
     height: auto;
     text-decoration: none;
-    width: 2em
+    width: 2em;
 }
 
 .cv-content .s-subtitle,
@@ -116,7 +120,7 @@
     margin-bottom: 0;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    position: static
+    position: static;
 }
 
 @supports ((position:-webkit-sticky) or (position:sticky)) {
@@ -138,78 +142,52 @@
         right: -10px;
         top: -5px;
         z-index: -1
-    }
+    };
 }
 
 .cv-content .s-subtitle:hover .anchor,
 .cv-content .s-title:hover .anchor {
     height: auto;
-    width: 1em
+    width: 1em;
 }
 
 .cv-content .s-subtitle+.cv-note,
 .cv-content .s-title+.cv-note {
-    margin-top: .2rem
+    margin-top: .2rem;
 }
 
 .cv-content .cv-note {
-    margin: .1rem 0
-}
-
-.cv-content .cv-ad {
-    background: #f8f9fa;
-    border-radius: .1rem;
-    display: inline-block;
-    padding: .4rem;
-    position: relative
-}
-
-.cv-content .cv-ad::before {
-    color: #acb3c2;
-    content: "AD";
-    font-size: .7rem;
-    position: absolute;
-    right: .4rem;
-    top: .1rem
-}
-
-.cv-content .cv-ad.cv-ad-sidebar::before {
-    content: none
+    margin: .1rem 0;
 }
 
 .cv-content .carbon-wrap .carbon-img {
-    display: block
+    display: block;
 }
 
 .cv-content .carbon-wrap .carbon-text {
     color: #667189;
     display: block;
-    font-size: .7rem
-}
-
-.cv-content .carbon-poweredby {
-    color: #acb3c2;
-    font-size: .7rem
+    font-size: .7rem;
 }
 
 .cv-content .column {
-    padding: .4rem
+    padding: .4rem;
 }
 
 .cv-content .cv-block {
     border-radius: .1rem;
-    padding: .4rem
+    padding: .4rem;
 }
 
 .cv-content .cv-block.bg-gray {
-    background: #f0f1f4
+    background: #f0f1f4;
 }
 
 .cv-content .cv-shape {
     height: 4.8rem;
     line-height: 1.2rem;
     padding: 1.8rem 0;
-    width: 4.8rem
+    width: 4.8rem;
 }
 
 .cv-content .cv-dot {
@@ -217,43 +195,43 @@
     display: inline-block;
     height: .5rem;
     padding: 0;
-    width: .5rem
+    width: .5rem;
 }
 
 .cv-content .cv-table td,
 .cv-content .cv-table th {
-    padding: .75rem .25rem
+    padding: .75rem .25rem;
 }
 
 .cv-content .cv-color {
     border-radius: .1rem;
     margin: .25rem 0;
-    padding: .5rem
+    padding: .5rem;
 }
 
 .cv-content .cv-color .color-subtitle {
     font-size: .7rem;
-    opacity: .75
+    opacity: .75;
 }
 
 .cv-content .code {
-    color: #667189
+    color: #667189;
 }
 
 .cv-content .code .com {
-    color: #acb3c2
+    color: #acb3c2;
 }
 
 .cv-content .code .tag {
-    color: #e74430
+    color: var(--brand-color);
 }
 
 .cv-content .code .atn {
-    color: #667189
+    color: #667189;
 }
 
 .cv-content .code .atv {
-    color: #e74430
+    color: var(--brand-color);
 }
 
 .cv-content .code[data-lang=Bash] .tag {
@@ -261,29 +239,29 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
 .cv-content .panel {
-    height: 75vh
+    height: 75vh;
 }
 
 .cv-content .panel .tile {
-    margin: .75rem 0
+    margin: .75rem 0;
 }
 
 .cv-content .parallax {
-    margin: 2rem auto
+    margin: 2rem auto;
 }
 
 .cv-content .form-autocomplete .menu {
-    position: static
+    position: static;
 }
 
 .cv-content .example-tile-icon {
     align-content: space-around;
     align-items: center;
-    background: #e74430;
+    background: var(--brand-color);
     border-radius: .1rem;
     color: #fff;
     display: flex;
@@ -292,39 +270,39 @@
     -ms-flex-line-pack: distribute;
     font-size: 1.2rem;
     height: 2rem;
-    width: 2rem
+    width: 2rem;
 }
 
 .cv-content .example-tile-icon .icon {
-    margin: auto
+    margin: auto;
 }
 
 .cv-content .comparison-slider {
     height: auto;
-    padding-bottom: 56.2222%
+    padding-bottom: 56.2222%;
 }
 
 .cv-content .comparison-slider .filter-grayscale {
-    filter: grayscale(75%)
+    filter: grayscale(75%);
 }
 
 .cv-content .off-canvas {
-    position: relative
+    position: relative;
 }
 
 .cv-content .off-canvas .off-canvas-toggle {
     left: .4rem;
     position: absolute;
     top: .4rem;
-    z-index: 1
+    z-index: 1;
 }
 
 .cv-brand,
 a.cv-logo {
-    color: #e74430;
+    color: var(--brand-color);
     left: 1.5rem;
     position: fixed;
-    top: .85rem
+    top: .85rem;
 }
 
 .cv-brand .cv-logo {
@@ -335,18 +313,16 @@ a.cv-logo {
     -ms-flex-align: center;
     height: 2rem;
     padding: .2rem;
-    width: auto
+    width: auto;
 }
 
 .cv-brand .cv-logo:focus,
 .cv-brand .cv-logo:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .cv-brand .cv-logo img {
     display: inline;
-    height: auto;
-    width: 1.6rem
 }
 
 .cv-brand .cv-logo h2 {
@@ -354,80 +330,79 @@ a.cv-logo {
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 1.5rem;
-    margin-bottom: 0;
     margin-left: .5rem;
-    margin-right: .5rem
+    margin-right: .5rem;
 }
 
 .cv-footer {
     color: #acb3c2;
-    padding: .5rem .5rem 1.5rem .5rem
+    padding: .5rem .5rem 1.5rem .5rem;
 }
 
 .cv-footer a {
-    color: #667189
+    color: #667189;
 }
 
 .btn .feather {
     height: 1rem;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .section-hero {
-    padding: 1rem .5rem
+    padding: 1rem .5rem;
 }
 
 .section-hero .cv-brand {
     position: absolute;
-    top: .85rem
+    top: .85rem;
 }
 
 .section-hero .cv-brand h2 {
-    color: #e74430
+    color: var(--brand-color);
 }
 
 .section-hero .column {
-    padding: .4rem
+    padding: .4rem;
 }
 
 .section-updates {
-    padding: 4.5rem .5rem 3.5rem .5rem
+    padding: 4.5rem .5rem 3.5rem .5rem;
 }
 
 .section-updates .card {
     border: 0;
     color: #727e96;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 .section-features {
-    padding: 4.5rem .5rem
+    padding: 4.5rem .5rem;
 }
 
 .section-features .column {
-    padding: .4rem
+    padding: .4rem;
 }
 
 .section-footer {
     color: #acb3c2;
     padding: 1.8rem .75rem 1rem .75rem;
     position: relative;
-    z-index: 200
+    z-index: 200;
 }
 
 .section-footer a {
-    color: #667189
+    color: #667189;
 }
 
 .grid-hero {
     padding-bottom: 2rem;
-    padding-top: 6rem
+    padding-top: 6rem;
 }
 
 .grid-hero h1 {
     color: #50596c;
     font-size: 1.6rem;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
 }
 
 .grid-hero h2 {
@@ -435,112 +410,112 @@ a.cv-logo {
     font-size: .9rem;
     font-weight: 400;
     line-height: 1.5rem;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
 }
 
 .grid-hero h2 u {
     border-bottom: .1rem solid currentColor;
     padding-bottom: .05rem;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .grid-hero .card {
     background: 0 0;
     border: 0;
     color: #727e96;
-    padding: .5rem
+    padding: .5rem;
 }
 
 .grid-hero .card .card-title {
-    color: #e74430;
+    color: var(--brand-color);
     font-size: .9rem;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 @media (max-width:960px) {
     .off-canvas .off-canvas-toggle {
-        z-index: 300
+        z-index: 300;
     }
     .cv-sidebar .cv-brand {
         margin: .85rem 1.5rem;
         padding: 0;
-        position: static
+        position: static;
     }
     .cv-sidebar .cv-nav {
         margin-top: 1rem;
-        /* position: static */
+        /* position: static */;
     }
     .cv-sidebar .menu .menu-item>a {
-        padding: .3rem .4rem
+        padding: .3rem .4rem;
     }
     .cv-navbar {
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         background: rgba(248, 249, 250, .65);
-        left: 0
+        left: 0;
     }
     .cv-content.off-canvas-content {
         min-width: auto;
         padding: 0 1.5rem;
-        width: 100%
+        width: 100%;
     }
     .cv-content .s-subtitle,
     .cv-content .s-title {
         padding-top: 5rem;
-        position: static
+        position: static;
     }
     .cv-content .s-subtitle::before,
     .cv-content .s-title::before {
-        content: none
+        content: none;
     }
     .section-hero .s-brand {
         height: 5rem;
         padding: 1.5rem .5rem;
         text-align: center;
-        width: 100%
+        width: 100%;
     }
     .section-hero .s-brand .s-logo {
-        height: auto
+        height: auto;
     }
     .section-hero .s-brand img {
         height: 3.2rem;
-        width: 3.2rem
+        width: 3.2rem;
     }
     .section-hero .s-brand h2 {
-        display: none
+        display: none;
     }
 }
 
 @media (max-width:600px) {
     .grid-hero h2 {
-        font-size: .9rem
+        font-size: .9rem;
     }
     .grid-hero .card {
-        padding: 0
+        padding: 0;
     }
     .off-canvas .off-canvas-toggle {
-        left: .5rem
+        left: .5rem;
     }
     .cv-navbar .label {
-        right: 1rem
+        right: 1rem;
     }
     .grid-hero .cv-brand {
-        left: 1rem
+        left: 1rem;
     }
     .cv-sidebar .cv-brand {
-        margin: .85rem 1rem
+        margin: .85rem 1rem;
     }
     .cv-sidebar .cv-nav {
-        padding: .5rem 1rem
+        padding: .5rem 1rem;
     }
     .cv-content.off-canvas-content {
-        padding: 0 .5rem
+        padding: 0 .5rem;
     }
     .cv-content .cv-block {
-        padding: .4rem .1rem
+        padding: .4rem .1rem;
     }
     .cv-content .anchor {
-        display: none
+        display: none;
     }
 }
 
@@ -549,12 +524,8 @@ a.cv-logo {
         bottom: 1rem;
         position: fixed;
         right: 1rem;
-        width: 7.3rem
+        width: 7.3rem;
     }
-}
-
-.btn.btn-link i.icon.icon-menu {
-    color: #e74430;
 }
 
 /* brand color on links */
@@ -562,8 +533,9 @@ a.cv-logo {
 a,
 a:active,
 a:focus,
-a:hover {
-    color: #e74430;
+a:hover,
+.btn.btn-link i.icon.icon-menu {
+    color: var(--brand-color);
 }
 
 /* paragraph */
@@ -620,11 +592,11 @@ p {
 }
 
 .columns:hover .col-3 {
-    border-right-color: #e74430;
+    border-right-color: var(--brand-color);
 }
 
 .columns:hover .col-3 .chip {
-    color: #e74430;
+    color: var(--brand-color);
     background-color: #f8f9fa;
-    border: 1px solid #e74430;
+    border: 1px solid var(--brand-color);
 }
