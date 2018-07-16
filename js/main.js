@@ -1,25 +1,24 @@
 'use strict';
 
 
-function switcher() {
-    const link = document.querySelector('link#color-mode');
-
-    return event => {
-        const previous = link.className;
-        link.className = link.className === 'dark' ? 'light' : 'dark';
-        event.target.innerHTML = window.strings[previous];
-        link.href = `${window.location.origin}/css/${link.className}.css`;
-        localStorage.setItem('mode', link.className);
-    }
+const $ = {
+    el: s => document.querySelector(s),
+    set: (k, v) => localStorage.setItem(k, v),
+    get: k => localStorage.getItem(k),
 }
 
-document.querySelector('#color').addEventListener('click', switcher());
+const link = $.el('link#color-mode');
+const button = $.el('#color');
+const href = mode => `${window.location.origin}/css/${mode}.css`;
+const inverse = mode => mode === 'dark' ? 'light' : 'dark';
 
-window.onload = () => {
-    const mode = localStorage.getItem('mode') === 'dark' ? 'dark' : 'light';
-    const previous = mode === 'dark' ? 'light' : 'dark';
-    const link = document.querySelector('link#color-mode');
-    link.className = mode;
-    link.href = `${window.location.origin}/css/${link.className}.css`;
-    document.querySelector('#color').innerHTML = window.strings[previous];
+function change(mode) {
+    const current = inverse(mode);
+    link.className = current;
+    link.href = href(current);
+    button.innerHTML = window.strings[mode];
+    return current;
 }
+
+window.onload = () => change(inverse($.get('mode')));
+button.addEventListener('click', () => $.set('mode', change(link.className)));
