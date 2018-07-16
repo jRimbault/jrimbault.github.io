@@ -1,0 +1,13 @@
+:root {
+    --body-color: #50596c;
+    --brand-color: #e74430;
+    --light-gray: #50596c;
+    --light-light-gray: #50596c;
+    --title-color: #50596c;
+    --body-background: #ffffff;
+    --darker-background: #f8f9fa;
+    --chip-text: #50596c;
+    --chip-hover: #ffffff;
+    --chip-border: #e1e1e1;
+    --language-switch: #f8f9fa;
+}

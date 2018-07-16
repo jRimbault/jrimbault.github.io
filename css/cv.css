@@ -3,8 +3,19 @@
  * Based on Spectre.css Docs | MIT License | github.com/picturepan2/spectre
  */
 
-:root {
-    --brand-color: #e74430;
+body {
+    transition: all 0.3s ease;
+    background-color: var(--body-background);
+    color: var(--body-color);
+}
+
+.off-canvas .off-canvas-sidebar {
+    background-color: var(--darker-background);
+}
+
+.label {
+    color: var(--chip-text);
+    background-color: var(--language-switch);
 }
 
 .off-canvas .off-canvas-toggle {
@@ -51,14 +62,14 @@
 }
 
 .cv-sidebar .accordion input~.accordion-header {
-    color: #5b657a;
+    color: var(--light-gray);
     font-size: .65rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .cv-sidebar .accordion input:checked~.accordion-header {
-    color: #667189;
+    color: var(--light-light-gray);
 }
 
 .cv-sidebar .accordion .menu .menu-item {
@@ -68,7 +79,7 @@
 
 .cv-sidebar .accordion .menu .menu-item>a {
     background: 0 0;
-    color: #667189;
+    color: var(--light-light-gray);
     display: inline-block;
     transition: all .2s ease;
 }
@@ -115,7 +126,7 @@
 
 .cv-content .s-subtitle,
 .cv-content .s-title {
-    color: #414857;
+    color: var(--title-color);
     line-height: 1.8rem;
     margin-bottom: 0;
     padding-bottom: 1rem;
@@ -129,11 +140,10 @@
         position: sticky;
         position: -webkit-sticky;
         top: 0;
-        z-index: 100
+        z-index: 100;
     }
     .cv-content .s-subtitle::before,
     .cv-content .s-title::before {
-        background: #fff;
         bottom: 0;
         content: "";
         display: block;
@@ -141,8 +151,8 @@
         position: absolute;
         right: -10px;
         top: -5px;
-        z-index: -1
-    };
+        z-index: -1;
+    }
 }
 
 .cv-content .s-subtitle:hover .anchor,
@@ -165,7 +175,7 @@
 }
 
 .cv-content .carbon-wrap .carbon-text {
-    color: #667189;
+    color: var(--light-light-gray);
     display: block;
     font-size: .7rem;
 }
@@ -215,7 +225,7 @@
 }
 
 .cv-content .code {
-    color: #667189;
+    color: var(--light-light-gray);
 }
 
 .cv-content .code .com {
@@ -227,7 +237,7 @@
 }
 
 .cv-content .code .atn {
-    color: #667189;
+    color: var(--light-light-gray);
 }
 
 .cv-content .code .atv {
@@ -340,7 +350,7 @@ a.cv-logo {
 }
 
 .cv-footer a {
-    color: #667189;
+    color: var(--light-light-gray);
 }
 
 .btn .feather {
@@ -391,7 +401,7 @@ a.cv-logo {
 }
 
 .section-footer a {
-    color: #667189;
+    color: var(--light-light-gray);
 }
 
 .grid-hero {
@@ -406,7 +416,7 @@ a.cv-logo {
 }
 
 .grid-hero h2 {
-    color: #5b657a;
+    color: var(--light-gray);
     font-size: .9rem;
     font-weight: 400;
     line-height: 1.5rem;
@@ -443,7 +453,8 @@ a.cv-logo {
     }
     .cv-sidebar .cv-nav {
         margin-top: 1rem;
-        /* position: static */;
+        /* position: static */
+        ;
     }
     .cv-sidebar .menu .menu-item>a {
         padding: .3rem .4rem;
@@ -552,7 +563,9 @@ p {
 
 .chip {
     transition: all .2s ease;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--chip-border);
+    color: var(--chip-text);
+    background-color: var(--darker-background);
 }
 
 /**
@@ -584,6 +597,7 @@ p {
 /**
  * silver red lining
  */
+
 .col-3 {
     border-right: .1rem solid #e7e9ed;
     margin-right: 0;
@@ -597,6 +611,6 @@ p {
 
 .columns:hover .col-3 .chip {
     color: var(--brand-color);
-    background-color: #f8f9fa;
+    background-color: var(--chip-hover);
     border: 1px solid var(--brand-color);
 }
