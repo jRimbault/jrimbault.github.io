@@ -598,7 +598,7 @@ p {
  */
 
 .col-3 {
-    border-right: .1rem solid #e7e9ed;
+    border-right: .1rem solid var(--column-border-color);
     margin-right: 0;
     padding: .4rem .8rem;
     transition: border-right-color .2s ease;
