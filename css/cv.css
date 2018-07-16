@@ -4,7 +4,6 @@
  */
 
 body {
-    transition: all 0.3s ease;
     background-color: var(--body-background);
     color: var(--body-color);
 }
