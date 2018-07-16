@@ -7,7 +7,7 @@ function switcher() {
     return event => {
         const previous = link.className;
         link.className = link.className === 'dark' ? 'light' : 'dark';
-        event.target.innerHTML = `${previous} mode`;
+        event.target.innerHTML = window.strings[previous];
         link.href = `${window.location.origin}/css/${link.className}.css`;
     }
 }
