@@ -20,5 +20,4 @@ function change(mode) {
     return current;
 }
 
-window.onload = () => change(inverse($.get('mode')));
 button.addEventListener('click', () => $.set('mode', change(link.className)));
