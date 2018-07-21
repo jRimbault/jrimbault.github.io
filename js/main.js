@@ -5,7 +5,7 @@ const $ = {
     el: s => document.querySelector(s),
     set: (k, v) => localStorage.setItem(k, v),
     get: k => localStorage.getItem(k),
-}
+};
 
 const link = $.el('link#color-mode');
 const button = $.el('#color');
