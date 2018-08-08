@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>404 Error</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    @keyframes pulse {
+      0% {
+        -webkit-transform: translate(16px, 16px) scale(0.6);
+        transform: translate(16px, 16px) scale(0.6);
+        stroke-width: 13px;
+      }
+      50% {
+        -webkit-transform: translate(-24px, -24px) scale(1.6);
+        transform: translate(-24px, -24px) scale(1.6);
+        stroke-width: 0;
+      }
+      100% {
+        stroke-width: 0;
+      }
+    }
+
+    @keyframes wiggle {
+      0% {
+        transform: rotateZ(2deg);
+      }
+      50% {
+        transform: rotateZ(-2deg);
+      }
+      100% {
+        transform: rotateZ(2deg);
+      }
+    }
+
+    .wiggle {
+      animation: wiggle 0.2s ease infinite;
+    }
+
+    .svg {
+      padding-top: 5px;
+      width: 72px;
+      height: 72px;
+    }
+
+    .pulse {
+      -webkit-animation: pulse 2s ease infinite;
+      animation: pulse 2s ease infinite;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      font-family: 'Lato Medium', sans-serif;
+      background-color: #282C34;
+      color: #e1e1e1;
+      font-size: 20px;
+    }
+
+    .center {
+      padding: 1rem;
+      background-color: #21252B;
+      align-self: center;
+      border: 2px #3B4048 solid;
+      transition: all .2s ease;
+      border-radius: .1rem;
+    }
+
+    .center:hover {
+      border: 2px #e74430 solid;
+    }
+
+    .message {
+      display: flex;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 640px) {
+      .message {
+        flex-direction: column;
+      }
+    }
+
+    .message div {
+      margin: 0 1rem;
+    }
+
+    .message h2,
+    .message p {
+      margin: 0;
+      line-height: 1.5rem;
+    }
+
+    .message h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .message p {
+      font-size: .8em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+
+<body>
+<div class="center" id="center">
+  <a href="/">
+    <div class="message">
+      <svg class="svg">
+        <svg viewBox="0 0 80 80">
+          <polygon class="pulse"
+                   fill="transparent"
+                   stroke="#e74430"
+                   points="40,16 60,28 60,51 40,62 20,51 20,28">
+          </polygon>
+          <polygon fill="#e74430"
+                   class=""
+                   points="40,16 60,28 60,51 40,62 20,51 20,28">
+          </polygon>
+        </svg>
+      </svg>
+      <div>
+        <h2>404</h2>
+        <p>There's nothing here</p>
+      </div>
+    </div>
+  </a>
+</div>
+</body>
+<script>
+    function konami(callback) {
+        let kkeys = [];
+        // up,up,down,down,left,right,left,right,B,A
+        const konami = '38,38,40,40,37,39,37,39,66,65';
+        return event => {
+            kkeys.push(event.keyCode);
+            if (kkeys.toString().indexOf(konami) >= 0) {
+                callback();
+                kkeys = [];
+            }
+        }
+    }
+
+    function wiggle() {
+        const wiggleClass = 'wiggle';
+        const centerDiv = document.querySelector('#center');
+        centerDiv.classList.add(wiggleClass);
+        const removeClass = () => centerDiv.classList.remove(wiggleClass);
+        window.setTimeout(removeClass, 400);
+    }
+
+    window.addEventListener('keyup', konami(wiggle));
+</script>
+
+</html>
