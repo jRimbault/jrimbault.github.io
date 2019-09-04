@@ -1,0 +1,306 @@
+{
+  "identity": {
+    "name": "Jacques Rimbault",
+    "shortName": "jRimbault",
+    "description": "Développeur, 27 ans",
+    "location": "Paris"
+  },
+  "paragraphs": [
+    {
+      "name": "Experience",
+      "id": "experience",
+      "elements": [
+        {
+          "aside": {
+            "kind": "date",
+            "date": "2018 .. Présent"
+          },
+          "title": "Développeur C# Angular",
+          "subTitle": "Société Générale - Corporate and Investment Banking",
+          "tags": [
+            ["C#", "TypeScript", "PowerShell"],
+            [".NET", "Angular"],
+            ["Windows Server"],
+            ["GitHub", "TeamCity"]
+          ]
+        },
+        {
+          "aside": {
+            "kind": "date",
+            "date": "2016 .. 2018"
+          },
+          "title": "Développeur PHP",
+          "subTitle": "Ministère de l'Intérieur - SG-DSIC",
+          "subTitleDescription": "Secrétariat Général - Direction des Systèmes d'Information et Communication",
+          "resume": [
+            "Développement et maintenance d'une application de l'administration centrale."
+          ],
+          "points": [
+            {
+              "description": "Migration de PHP 5.4 vers PHP 7.2",
+              "subPoints": [
+                {
+                  "description": "Changement de l'API d'interface avec la base de donnée"
+                },
+                {
+                  "description": "Refonte sous une forme routeur/controleur"
+                },
+                {
+                  "description": "Management des dépendances"
+                }
+              ]
+            },
+            {
+              "description": "Formation d'un apprenti"
+            },
+            {
+              "description": "Mise en place d'une pipeline mesurant la qualité du projet"
+            }
+          ],
+          "tags": [
+            ["PHP", "JavaScript", "Python 3"],
+            ["Composer", "ExtJS 3.4"],
+            ["Debian", "Apache", "MySQL", "Firefox 30 .. 56"],
+            ["Gitlab", "Jenkins", "Sonarqube"]
+          ]
+        },
+        {
+          "aside": {
+            "kind": "date",
+            "date": "2013 .. 2014"
+          },
+          "title": "Assistant technique",
+          "subTitle": "Caisse Primaire d'Assurance Maladie",
+          "resume": [
+            "Support technique des professionnels de santé.",
+            "Campagnes de promotion d'utilisation des logiciels de télétransmission chez les professionnels de santé.",
+            "Maintenance de la base de données des professionnels de santé de l'Essonne."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Formation",
+      "id": "education",
+      "elements": [
+        {
+          "aside": {
+            "kind": "date",
+            "date": "2015 .. Présent"
+          },
+          "title": "Bachelor, ESGI, Paris 12",
+          "subTitle": "Chef de projet logiciel et réseaux",
+          "resume": [
+            "Spécialité Architecture Logicielle.",
+            "Fondamentaux informatique. Algorithmique. Architecture des réseaux."
+          ],
+          "tags": [
+            ["Algorithmique"],
+            ["C", "Java", "PHP", "JavaScript", "SQL", "UML"],
+            [
+              "IPv4",
+              "Virtualistation",
+              "Administration Linux",
+              "Windows Server 2016"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Projets",
+      "id": "projects",
+      "elements": [
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Conserto",
+            "size": "h4"
+          },
+          "title": "PHP mini framework",
+          "subTitle": "Classes et utilitaires pour mes projets",
+          "resume": [
+            "Fait pour approfondir mes connaissances du langage et explorer la construction d'outils de base."
+          ],
+          "links": [
+            {
+              "text": "Documentation",
+              "url": "https://github.com/jRimbault/Conserto/wiki"
+            }
+          ],
+          "tags": [["PHP 7", "Composer"]]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "SlackEmojis",
+            "size": "h4"
+          },
+          "title": "Intégration avec Slack",
+          "subTitle": "Collecte d'information d'utilisation des emojis personalisés",
+          "resume": [
+            "Interface web et messages internes à l'équipe Slack.",
+            "Présentation de statistiques agrégées."
+          ],
+          "links": [
+            {
+              "text": "Sources",
+              "url": "https://github.com/jRimbault/SlackEmojisUsage"
+            }
+          ],
+          "tags": [["Python 3", "JavaScript"]]
+        }
+      ]
+    },
+    {
+      "name": "Compétences",
+      "id": "skills",
+      "elements": [
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Langages",
+            "size": "h5"
+          },
+          "tags": [
+            [
+              "Python 3",
+              "C#",
+              "TypeScript",
+              "JavaScript",
+              "Node.js",
+              "PHP 7",
+              "Bash",
+              "C"
+            ]
+          ]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Framework",
+            "size": "h5"
+          },
+          "tags": [[".NET"], ["Angular", "ExtJS"]]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Markup",
+            "size": "h5"
+          },
+          "tags": [
+            [
+              "HTML5",
+              "CSS3",
+              "Markdown",
+              { "html": "<span class=\"latex\">L<sup>a</sup>T<sub>e</sub>X</span>" }
+            ]
+          ]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Systèmes",
+            "size": "h5"
+          },
+          "tags": [
+            ["TeamCity"],
+            ["Composer", "pip", "npm", "yarn", "Nuget"],
+            ["Make", "CMake"],
+            ["ArchLinux", "Debian", "Windows"]
+          ]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Logiciels",
+            "size": "h5"
+          },
+          "tags": [
+            ["Apache", "Nginx"],
+            [
+              "Git",
+              "Visual Studio",
+              "JetBrains IDEs",
+              "Visual Studio Code",
+              "Vim"
+            ],
+            ["Bash", "Zsh"]
+          ]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Langues",
+            "size": "h5"
+          },
+          "tags": [["Français", "Anglais"]]
+        }
+      ]
+    },
+    {
+      "name": "Intérêts",
+      "id": "interests",
+      "elements": [
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Musique",
+            "size": "h5"
+          },
+          "resume": [
+            "Pratique du piano classique depuis l'âge de 10 ans",
+            "Classique, pop, rock, éléctronique..."
+          ]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Cinéma",
+            "size": "h5"
+          },
+          "resume": [
+            "Science fiction, Aronofsky, Audiard, Iñárritu, Kubrick, Tarantino, Villeneuve, Wright..."
+          ]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Romans",
+            "size": "h5"
+          },
+          "resume": [
+            "Asimov, Chiang, Gaiman, Tolkien, Hobb, Pratchett, Rajaniemi..."
+          ]
+        },
+        {
+          "aside": {
+            "kind": "title",
+            "text": "Presse",
+            "size": "h5"
+          },
+          "resume": ["New-York Times, tech, infosec, HN..."]
+        }
+      ]
+    }
+  ],
+  "sidebar": [
+    {
+      "text": "PDF",
+      "url": "https://drive.google.com/file/d/1UNM8dw9jKXIQ-5X2UvJ3IMThRCcH6V7X"
+    },
+    {
+      "text": "GitHub",
+      "url": "https://github.com/jRimbault"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jrimbault"
+    },
+    {
+      "text": "Email",
+      "url": "mailto:jacques.rimbault@gmail.com"
+    }
+  ]
+}
