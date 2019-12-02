@@ -14,7 +14,7 @@ function makeIntroduction(identity: Identity) {
             classList: 'anchor',
             textContent: '#',
             attributes: {
-              href: '#introduction',
+              'href': '#introduction',
               'aria-hidden': 'true',
             },
           }),
