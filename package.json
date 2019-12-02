@@ -2,9 +2,12 @@
   "name": "jrimbault.github.io",
   "version": "1.0.0",
   "scripts": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint --ext ts src",
     "start:serve": "webpack-dev-server --open",
     "build:watch": "webpack --watch",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "test": "echo no tests yet"
   },
   "repository": {
     "type": "git",
