@@ -1,6 +1,5 @@
+import { createNode } from 'dom'
 import { Resume, Identity, Link } from 'types'
-import { createNode } from 'utils'
-
 
 function makeTopSidebar(identity: Identity) {
   return createNode('div', {
@@ -66,7 +65,7 @@ function makeContact(links: Link[]) {
   })
 }
 
-export function switchTheme(shouldSwitch: boolean=true) {
+export function switchTheme(shouldSwitch=true) {
   type Theme = 'dark' | 'light'
   const link = document.querySelector('link#color-mode') as Element
   const href = (mode: Theme) => `./assets/css/${mode}.css`

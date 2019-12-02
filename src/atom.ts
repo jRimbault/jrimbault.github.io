@@ -1,8 +1,9 @@
+import { createNode, NodeOptions } from 'dom'
 import { Aside, Point, TagList, Link, Atom } from 'types'
-import { createNode, NodeOptions, notNull } from 'utils'
+import { notNull } from 'utils'
 
 function makeAside(aside?: Aside) {
-  if (aside === undefined) return null
+  if (aside === undefined) return undefined
   return createNode('div', {
     classList: ['col-3', 'col-md-12', 'column', 'hide-md'],
     children: [
@@ -25,15 +26,15 @@ function makeAside(aside?: Aside) {
 }
 
 function makeAtomHeader(aside?: Aside) {
-  if (aside === undefined) return null
+  if (aside === undefined) return undefined
   return createNode('div', {
     classList: ['show-md', 'mb-2'],
     children: [
       aside.kind === 'date'
         ? createNode('span', {
-            classList: ['chip', 'p-2'],
-            textContent: aside.date
-          })
+          classList: ['chip', 'p-2'],
+          textContent: aside.date
+        })
         : createNode(aside.size, { textContent: aside.text })
     ]
   })
@@ -86,12 +87,12 @@ function makeAtomContent(atom: Atom) {
     classList: (atom.aside && atom.aside.kind === 'date') ? 'cv-note' : [],
     children: [
       makeAtomHeader(atom.aside),
-      atom.title ? createNode('h4', { textContent: atom.title }) : null,
-      atom.subTitle ? createNode('h5', { textContent: atom.subTitle }) : null,
+      atom.title ? createNode('h4', { textContent: atom.title }) : undefined,
+      atom.subTitle ? createNode('h5', { textContent: atom.subTitle }) : undefined,
       ...resume,
-      atom.points ? makePointList(atom.points) : null,
-      atom.links ? makeLinkList(atom.links) : null,
-      atom.tags ? makeTagList(atom.tags) : null,
+      atom.points ? makePointList(atom.points) : undefined,
+      atom.links ? makeLinkList(atom.links) : undefined,
+      atom.tags ? makeTagList(atom.tags) : undefined,
     ].filter(notNull)
   })
 }
