@@ -88,7 +88,9 @@ function makeAtomContent(atom: Atom) {
     children: [
       makeAtomHeader(atom.aside),
       atom.title ? createNode('h4', { textContent: atom.title }) : undefined,
-      atom.subTitle ? createNode('h5', { textContent: atom.subTitle }) : undefined,
+      atom.subTitle
+        ? createNode('h5', { textContent: atom.subTitle })
+        : undefined,
       ...resume,
       atom.points ? makePointList(atom.points) : undefined,
       atom.links ? makeLinkList(atom.links) : undefined,
