@@ -1,7 +1,6 @@
-import { Identity, Resume } from 'types'
-import { createNode } from 'utils'
+import { createNode } from 'dom'
 import { makeParagraph } from 'paragraph'
-
+import { Identity, Resume } from 'types'
 
 function makeIntroduction(identity: Identity) {
   return createNode('div', {
@@ -15,12 +14,12 @@ function makeIntroduction(identity: Identity) {
             classList: 'anchor',
             textContent: '#',
             attributes: {
-              href: '#introduction',
+              'href': '#introduction',
               'aria-hidden': 'true',
             },
           }),
-          createNode('span', { textContent: identity.name })
-        ]
+          createNode('span', { textContent: identity.name }),
+        ],
       }),
       createNode('h5', { textContent: identity.description }),
       createNode('h5', { textContent: identity.location }),

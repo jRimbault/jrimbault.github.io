@@ -1,6 +1,6 @@
-import { Paragraph } from 'types'
-import { createNode } from 'utils'
 import { makeAtom } from 'atom'
+import { createNode } from 'dom'
+import { Paragraph } from 'types'
 
 function makeParagraphTitle(paragraph: Paragraph) {
   return createNode('h3', {
@@ -9,7 +9,7 @@ function makeParagraphTitle(paragraph: Paragraph) {
       createNode('a', {
         classList: 'anchor',
         attributes: {
-          href: '#' + paragraph.id,
+          'href': '#' + paragraph.id,
           'aria-hidden': 'true',
         },
         textContent: '#',
