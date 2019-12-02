@@ -9,10 +9,12 @@ function makeTopSidebar(identity: Identity) {
         classList: 'cv-logo',
         attributes: { href: '.' },
         children: [
-          createNode('h2', { textContent: identity.shortName || identity.name })
-        ]
-      })
-    ]
+          createNode('h2', {
+            textContent: identity.shortName || identity.name,
+          }),
+        ],
+      }),
+    ],
   })
 }
 
@@ -47,12 +49,12 @@ function makeSidebarList(title: string, links: Link[]) {
                   createNode('a', {
                     textContent: link.text,
                     attributes: { href: link.url },
-                  })
-                ]
+                  }),
+                ],
               })
-            })
-          })
-        ]
+            }),
+          }),
+        ],
       }),
     ],
   })
@@ -61,22 +63,17 @@ function makeSidebarList(title: string, links: Link[]) {
 function makeContact(links: Link[]) {
   return createNode('div', {
     classList: 'accordion-container',
-    children: [makeSidebarList('contact', links)]
+    children: [makeSidebarList('contact', links)],
   })
 }
 
-export function switchTheme(shouldSwitch=true) {
+export function switchTheme(shouldSwitch = true) {
   type Theme = 'dark' | 'light'
   const link = document.querySelector('link#color-mode') as Element
   const href = (mode: Theme) => `./assets/css/${mode}.css`
-  const normalize = (mode: Theme | null) => mode === 'dark'
-    ? 'dark'
-    : 'light'
-  const inverse = (mode: Theme | null) => !shouldSwitch
-    ? normalize(mode)
-    : mode === 'dark'
-      ? 'light'
-      : 'dark'
+  const normalize = (mode: Theme | null) => (mode === 'dark' ? 'dark' : 'light')
+  const inverse = (mode: Theme | null) =>
+    !shouldSwitch ? normalize(mode) : mode === 'dark' ? 'light' : 'dark'
   return () => {
     const current = localStorage.getItem('theme') as Theme | null
     if (current) {
@@ -104,7 +101,7 @@ function makeThemeSwitcher() {
           checked: '',
           hidden: '',
           type: 'checkbox',
-        }
+        },
       }),
       label,
     ],
@@ -123,7 +120,7 @@ export function makeSidebar(resume: Resume) {
         makeSidebarList('À propos', about),
         makeContact(resume.sidebar),
         makeThemeSwitcher(),
-      ]
+      ],
     })
     sidebarDiv.appendChild(makeTopSidebar(resume.identity))
     sidebarDiv.appendChild(nav)

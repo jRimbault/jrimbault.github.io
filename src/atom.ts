@@ -8,20 +8,17 @@ function makeAside(aside?: Aside) {
     classList: ['col-3', 'col-md-12', 'column', 'hide-md'],
     children: [
       createNode('div', {
-        classList: [
-          aside.kind === 'date' ? 'cv-note' : '',
-          'text-right'
-        ],
+        classList: [aside.kind === 'date' ? 'cv-note' : '', 'text-right'],
         children: [
           aside.kind === 'date'
             ? createNode('span', {
-              classList: ['chip', 'p-2'],
-              textContent: aside.date
-            })
-            : createNode(aside.size, { textContent: aside.text })
-        ]
-      })
-    ]
+                classList: ['chip', 'p-2'],
+                textContent: aside.date,
+              })
+            : createNode(aside.size, { textContent: aside.text }),
+        ],
+      }),
+    ],
   })
 }
 
@@ -33,10 +30,10 @@ function makeAtomHeader(aside?: Aside) {
       aside.kind === 'date'
         ? createNode('span', {
             classList: ['chip', 'p-2'],
-            textContent: aside.date
+            textContent: aside.date,
           })
-        : createNode(aside.size, { textContent: aside.text })
-    ]
+        : createNode(aside.size, { textContent: aside.text }),
+    ],
   })
 }
 
@@ -45,13 +42,13 @@ function makePoint(point: Point): HTMLLIElement {
     textContent: point.description,
     children: point.subPoints
       ? [createNode('ul', { children: point.subPoints.map(makePoint) })]
-      : []
+      : [],
   })
 }
 
 function makePointList(points: Point[]): HTMLUListElement {
   return createNode('ul', {
-    children: points.map(makePoint)
+    children: points.map(makePoint),
   })
 }
 
@@ -62,20 +59,22 @@ function makeTag(tag: NodeOptions['textContent']) {
 function makeTagList(tagsList: TagList) {
   return createNode('div', {
     classList: 'cv-taglist',
-    children: tagsList.map(
-      tags => createNode('p', { children: tags.map(makeTag) })
-    )
+    children: tagsList.map(tags =>
+      createNode('p', { children: tags.map(makeTag) }),
+    ),
   })
 }
 
 function makeLinkList(links: Link[]) {
   return createNode('p', {
-    children: links.map(link => createNode('a', {
-      textContent: link.text,
-      attributes: {
-        href: link.url
-      }
-    }))
+    children: links.map(link =>
+      createNode('a', {
+        textContent: link.text,
+        attributes: {
+          href: link.url,
+        },
+      }),
+    ),
   })
 }
 
@@ -84,7 +83,7 @@ function makeAtomContent(atom: Atom) {
     ? atom.resume.map(p => createNode('p', { textContent: p }))
     : []
   return createNode('div', {
-    classList: (atom.aside && atom.aside.kind === 'date') ? 'cv-note' : [],
+    classList: atom.aside && atom.aside.kind === 'date' ? 'cv-note' : [],
     children: [
       makeAtomHeader(atom.aside),
       atom.title ? createNode('h4', { textContent: atom.title }) : undefined,
@@ -95,7 +94,7 @@ function makeAtomContent(atom: Atom) {
       atom.points ? makePointList(atom.points) : undefined,
       atom.links ? makeLinkList(atom.links) : undefined,
       atom.tags ? makeTagList(atom.tags) : undefined,
-    ].filter(notNull)
+    ].filter(notNull),
   })
 }
 
@@ -109,12 +108,10 @@ export function makeAtom(atom: Atom) {
         children: [
           createNode('div', {
             classList: ['cv-note'],
-            children: [
-              makeAtomContent(atom),
-            ]
-          })
-        ]
-      })
-    ].filter(notNull)
+            children: [makeAtomContent(atom)],
+          }),
+        ],
+      }),
+    ].filter(notNull),
   })
 }

@@ -16,7 +16,9 @@ const filename = 'resume.json'
 window.onload = async () => {
   switchTheme(false)()
   try {
-    await fetchResume(`https://gist.githubusercontent.com/${username}/${gistId}/raw/${filename}`)
+    await fetchResume(
+      `https://gist.githubusercontent.com/${username}/${gistId}/raw/${filename}`,
+    )
   } catch (error) {
     console.error(error)
     fetchResume('assets/data/resume.json').catch(console.log)

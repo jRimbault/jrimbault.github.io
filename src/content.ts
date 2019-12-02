@@ -18,8 +18,8 @@ function makeIntroduction(identity: Identity) {
               'aria-hidden': 'true',
             },
           }),
-          createNode('span', { textContent: identity.name })
-        ]
+          createNode('span', { textContent: identity.name }),
+        ],
       }),
       createNode('h5', { textContent: identity.description }),
       createNode('h5', { textContent: identity.location }),
