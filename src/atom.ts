@@ -32,9 +32,9 @@ function makeAtomHeader(aside?: Aside) {
     children: [
       aside.kind === 'date'
         ? createNode('span', {
-          classList: ['chip', 'p-2'],
-          textContent: aside.date
-        })
+            classList: ['chip', 'p-2'],
+            textContent: aside.date
+          })
         : createNode(aside.size, { textContent: aside.text })
     ]
   })

@@ -1,23 +1,23 @@
 export type TagList = (string | { html: string })[][]
-export interface DateAside {
+export type DateAside = {
   kind: 'date'
   date: string
 }
-export interface TitleAside {
+export type TitleAside = {
   kind: 'title'
   text: string
   size: 'h4' | 'h5'
 }
 export type Aside = DateAside | TitleAside
-export interface Point {
+export type Point = {
   description: string
   subPoints?: Point[]
 }
-export interface Link {
+export type Link = {
   text: string
   url: string
 }
-export interface Atom {
+export type Atom = {
   aside?: Aside
   title?: string
   subTitle?: string
@@ -27,18 +27,18 @@ export interface Atom {
   links?: Link[]
   tags?: TagList
 }
-export interface Paragraph {
+export type Paragraph = {
   name: string
   id: string
   elements?: Atom[]
 }
-export interface Identity {
+export type Identity = {
   name: string
   shortName?: string
   description: string
   location: string
 }
-export interface Resume {
+export type Resume = {
   identity: Identity
   paragraphs: Paragraph[]
   sidebar: Link[]
