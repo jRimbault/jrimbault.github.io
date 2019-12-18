@@ -1,6 +1,26 @@
 import { createNode } from 'dom'
 import { Resume, Identity, Link } from 'types'
 
+export function makeSidebar(resume: Resume) {
+  return [
+    createNode('div', {
+      classList: 'cv-nav',
+      children: [
+        makeSidebarList(
+          'À propos',
+          (resume.paragraphs ?? []).map(p => ({
+            text: p.name,
+            url: '#' + p.id,
+          })),
+        ),
+        makeContact(resume.sidebar),
+        makeThemeSwitcher(),
+      ],
+    }),
+    makeTopSidebar(resume.identity),
+  ]
+}
+
 function makeTopSidebar(identity: Identity) {
   return createNode('div', {
     classList: 'cv-brand',
@@ -106,24 +126,4 @@ function makeThemeSwitcher() {
       label,
     ],
   })
-}
-
-export function makeSidebar(resume: Resume) {
-  const sidebarDiv = document.querySelector('#sidebar')
-  if (sidebarDiv) {
-    const about = resume.paragraphs
-      ? resume.paragraphs.map(p => ({ text: p.name, url: '#' + p.id }))
-      : []
-    const nav = createNode('div', {
-      classList: 'cv-nav',
-      children: [
-        makeSidebarList('À propos', about),
-        makeContact(resume.sidebar),
-        makeThemeSwitcher(),
-      ],
-    })
-    sidebarDiv.appendChild(makeTopSidebar(resume.identity))
-    sidebarDiv.appendChild(nav)
-  }
-  return resume
 }

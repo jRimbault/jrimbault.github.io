@@ -2,6 +2,13 @@ import { createNode } from 'dom'
 import { makeParagraph } from 'paragraph'
 import { Identity, Resume } from 'types'
 
+export function makeContent(resume: Resume) {
+  return [
+    makeIntroduction(resume.identity),
+    ...resume.paragraphs.map(makeParagraph),
+  ]
+}
+
 function makeIntroduction(identity: Identity) {
   return createNode('div', {
     id: 'introduction',
@@ -25,15 +32,4 @@ function makeIntroduction(identity: Identity) {
       createNode('h5', { textContent: identity.location }),
     ],
   })
-}
-
-export function makeContent(resume: Resume) {
-  const contentDiv = document.querySelector('#content')
-  if (contentDiv) {
-    contentDiv.appendChild(makeIntroduction(resume.identity))
-    for (const paragraph of resume.paragraphs) {
-      contentDiv.appendChild(makeParagraph(paragraph))
-    }
-  }
-  return resume
 }
