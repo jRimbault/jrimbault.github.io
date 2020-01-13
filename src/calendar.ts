@@ -4,12 +4,12 @@ function proxy(url: string) {
   return 'https://urlreq.appspot.com/req?method=GET&url=' + url
 }
 
-const colorMappings: Record<string, string> = {
-  '#ebedf0': '--darker-background',
-  '#c6e48b': '--very-light-brand-color',
-  '#7bc96f': '--light-brand-color',
-  '#196127': '--brand-color',
-  '#239a3b': '--dark-brand-color',
+const colorMappings: Partial<Record<string, string>> = {
+  '#ebedf0': 'var(--darker-background)',
+  '#c6e48b': 'var(--very-light-brand-color)',
+  '#7bc96f': 'var(--light-brand-color)',
+  '#196127': 'var(--brand-color)',
+  '#239a3b': 'var(--dark-brand-color)',
 }
 
 export async function getCalendar(user: string): Promise<HTMLElement> {
@@ -17,7 +17,7 @@ export async function getCalendar(user: string): Promise<HTMLElement> {
     await fetch(proxy(`https://github.com/users/${user}/contributions`))
   ).text()
   const doc = document.createElement('div')
-  doc.innerHTML = await response
+  doc.innerHTML = await response // parse HTML
   const calendar = doc.getElementsByClassName('js-calendar-graph')[0]
   calendar.removeAttribute('class')
   const legends = [
@@ -31,12 +31,17 @@ export async function getCalendar(user: string): Promise<HTMLElement> {
     name: 'Commits',
   })
   paragraph.append(calendar)
+  calendar.setAttribute('style', 'cursor: pointer;')
+  calendar.addEventListener('click', () => window.open('https://github.com/' + user))
   return paragraph
 }
 
 function mapColor(day: Element) {
-  const color = day.getAttribute('fill')
-  if (color) {
-    day.setAttribute('fill', `var(${colorMappings[color]})`)
+  const originalColor = day.getAttribute('fill')
+  if (originalColor) {
+    const brandColor = colorMappings[originalColor]
+    if (brandColor) {
+      day.setAttribute('fill', brandColor)
+    }
   }
 }
