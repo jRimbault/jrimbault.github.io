@@ -30,7 +30,7 @@ function buildBody(resume: Resume, calendar: HTMLElement) {
       createNode('div', {
         id: 'content',
         classList: ['cv-content', 'off-canvas-content'],
-        children: [...makeContent(resume), calendar],
+        children: makeContent(resume, calendar),
       }),
     ],
   })

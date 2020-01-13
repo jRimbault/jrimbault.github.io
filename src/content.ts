@@ -2,9 +2,10 @@ import { createNode } from 'dom'
 import { makeParagraph } from 'paragraph'
 import { Identity, Resume } from 'types'
 
-export function makeContent(resume: Resume) {
+export function makeContent(resume: Resume, commits: HTMLElement) {
   return [
     makeIntroduction(resume.identity),
+    commits,
     ...resume.paragraphs.map(makeParagraph),
   ]
 }

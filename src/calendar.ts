@@ -1,4 +1,4 @@
-import { makeParagraph } from 'paragraph'
+import { createNode } from 'dom'
 
 function proxy(url: string) {
   return 'https://urlreq.appspot.com/req?method=GET&url=' + url
@@ -26,14 +26,11 @@ export async function getCalendar(user: string): Promise<HTMLElement> {
   ]
   legends.map(h => h.remove())
   Array.from(calendar.getElementsByClassName('day')).forEach(mapColor)
-  const paragraph = makeParagraph({
-    id: 'github-activy',
-    name: 'Commits',
-  })
-  paragraph.append(calendar)
+  const activyGraph = createNode('div', { classList: 'container' })
+  activyGraph.append(calendar)
   calendar.setAttribute('style', 'cursor: pointer;')
   calendar.addEventListener('click', () => window.open('https://github.com/' + user))
-  return paragraph
+  return activyGraph
 }
 
 function mapColor(day: Element) {
