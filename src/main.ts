@@ -2,6 +2,7 @@ import { makeContent } from 'content'
 import { createNode } from 'dom'
 import { makeSidebar, switchTheme } from 'sidebar'
 import { Resume } from 'types'
+import { getCalendar } from 'calendar'
 
 async function fetchResume(url: string) {
   const resume = await (await fetch<Resume>(url)).json()
@@ -9,11 +10,11 @@ async function fetchResume(url: string) {
   if (noscript) {
     document.body.removeChild(noscript)
   }
-  document.body.append(buildBody(resume))
+  document.body.append(buildBody(resume, await getCalendar(username)))
   return resume
 }
 
-function buildBody(resume: Resume) {
+function buildBody(resume: Resume, calendar: HTMLElement) {
   return createNode('div', {
     classList: ['cv-container', 'off-canvas', 'off-canvas-sidebar-show'],
     children: [
@@ -29,7 +30,7 @@ function buildBody(resume: Resume) {
       createNode('div', {
         id: 'content',
         classList: ['cv-content', 'off-canvas-content'],
-        children: makeContent(resume),
+        children: [...makeContent(resume), calendar],
       }),
     ],
   })

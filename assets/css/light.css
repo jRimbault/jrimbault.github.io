@@ -1,6 +1,10 @@
 :root {
     --body-color: #50596c;
+    --very-light-brand-color: #f08e82;
+    --light-brand-color: #eb6959;
     --brand-color: #e74430;
+    --dark-brand-color: #b83626;
+    --very-dark-brand-color: #732218;
     --light-gray: #50596c;
     --light-light-gray: #50596c;
     --title-color: #50596c;

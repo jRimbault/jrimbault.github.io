@@ -9,7 +9,7 @@ function makeParagraphTitle(paragraph: Paragraph) {
       createNode('a', {
         classList: 'anchor',
         attributes: {
-          'href': '#' + paragraph.id,
+          href: '#' + paragraph.id,
           'aria-hidden': 'true',
         },
         textContent: '#',
