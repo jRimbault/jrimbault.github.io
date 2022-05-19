@@ -89,7 +89,7 @@ function makeContact(links: Link[]) {
 
 export function switchTheme(shouldSwitch = true) {
   type Theme = 'dark' | 'light'
-  const link = document.querySelector('link#color-mode') as Element
+  const link = document.querySelector('link#color-mode')!
   const href = (mode: Theme) => `./assets/css/${mode}.css`
   const normalize = (mode: Theme | null) => (mode === 'dark' ? 'dark' : 'light')
   const inverse = (mode: Theme | null) =>

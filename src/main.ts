@@ -35,12 +35,7 @@ function buildBody(resume: Resume) {
   })
 }
 
-const username = 'jRimbault'
-const gistId = 'ddbe04c43dba075e0da9ddb9ebda6926'
-const filename = 'resume.json'
-
-window.onload = async () => {
-  switchTheme(false)()
+async function main() {
   try {
     await fetchResume(
       `https://gist.githubusercontent.com/${username}/${gistId}/raw/${filename}`,
@@ -49,4 +44,14 @@ window.onload = async () => {
     console.error(error)
     fetchResume('assets/data/resume.json').catch(console.log)
   }
+}
+
+const username = 'jRimbault'
+const gistId = 'ddbe04c43dba075e0da9ddb9ebda6926'
+const filename = 'resume.json'
+
+window.onload = () => {
+  switchTheme(false)()
+  document.querySelector('label#theme-switcher-label')?.addEventListener('click', switchTheme())
+  // main()
 }
