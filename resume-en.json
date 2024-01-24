@@ -1,0 +1,180 @@
+{
+    "basics": {
+        "name": "Jacques Rimbault",
+        "label": "Developper 5 years of experience",
+        "email": "jacques.rimbault@gmail.com",
+        "phone": "+336309644882",
+        "location": {
+            "city": "Paris"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "jRimbault",
+                "url": "https://github.com/jRimbault"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "ORNESS",
+            "position": "Consultant developper",
+            "startDate": "2021-02-28",
+            "summary": "Société Générale SGCIB:<ul><li>Development of internal cloud APIs</li><li>Creation of APIs used by other SG developers to use the private cloud</li><li>Writing documentation and providing user support</li><li>Improvement of the unit test suite to achieve better coverage of critical parts</li></ul>Engie:<ul><li>Development of tools for network and security administrators</li><li>Creation of a firewall log filtering tool and manipulation of firewall rules</li></ul>",
+            "highlights": [
+                "TypeScript",
+                "WebComponents",
+                "Node.js",
+                "GitHub",
+                "Jenkins",
+                "Jira",
+                "Python",
+                "React",
+                "AWS Lambda",
+                "GitHub",
+                "Jenkins",
+                "Jira"
+            ]
+        },
+        {
+            "name": "Société Générale SGCIB",
+            "position": "Junior Developper",
+            "startDate": "2018-09-01",
+            "endDate": "2019-12-31",
+            "summary": "Profiling, CPU and memory optimization of the Liqor software<ul><li>Implementation of memory optimizations, saving 32GB of memory on an application that can use up to half a terabyte of memory</li><li>Development of internal monitoring tools, design of HTTP OWIN API and SignalR websocket API, tool used to facilitate the launch of Liqor by selecting various parameters that the developer wishes to test in particular (dataset, part of the software to test)</li><li>Redesign of continuous integration scripts to improve latency between the time of commit and the continuous integration results</li></ul>",
+            "highlights": [
+                "C#",
+                ".NET & .net core",
+                "TypeScript",
+                "Angular",
+                "Windows Server",
+                "Microsoft SQL Server",
+                "GitHub",
+                "TeamCity",
+                "Jira"
+            ]
+        },
+        {
+            "name": "Ministère de l'Intérieur",
+            "position": "Developper",
+            "startDate": "2016-07-01",
+            "endDate": "2018-06-31",
+            "summary": "Development and maintenance of an intranet web application<ul><li>Executed the transition from PHP 5.4 to PHP 5.6, started the transition to 7.0</li><li>Participated in setting up internal GitLab and Jenkins servers</li><li>Training of an apprentice</li><li>Updating the application to comply with good practices:<ul><li>Establish version control (git)</li><li> Implementation of unit tests and integration tests</li></ul></li></ul>",
+            "highlights": [
+                "PHP",
+                "JavaScript",
+                "ExtJS",
+                "MySQL"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "yadf",
+            "position": "Développeur Open Source",
+            "url": "https://github.com/jRimbault/yadf",
+            "summary": "Development of software to find duplicate files on a modern system. Currently ranked top 1 or 2 in benchmarks on systems equipped with an SSD.<ul><li>Contribution to the Rust 'textwrap' library to make it compliant with the Python 'textwrap' module it was inspired by, particularly by porting the unit test suite to verify compliance</li><li>Contribution to the Rust 'starship' software to improve startup speed and avoid double compilation of the library</li><li>Contribution to the Rust 'sysinfo' library to improve the nomenclature around storage devices</li></ul>",
+            "highlights": [
+                "Rust",
+                "Python",
+                "TypeScript"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "ESGI",
+            "area": "Software Architecture",
+            "studyType": "Bachelor",
+            "startDate": "2016-09-01",
+            "endDate": "2019-12-31"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming languages",
+            "keywords": [
+                "C#",
+                "Rust",
+                "TypeScript",
+                "Python",
+                "Javascript",
+                "Powershell",
+                "PHP",
+                "Bash"
+            ]
+        },
+        {
+            "name": "Professional field",
+            "keywords": [
+                "Developpement Front",
+                "Developpement Back",
+                "Test unitaires",
+                "Test d'intégration",
+                "Automatisation de tests"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "keywords": [
+                "Angular",
+                "React",
+                "Django",
+                "NodeJS",
+                ".net",
+                ".net core",
+                "NUnit",
+                "Bootstrap",
+                "Vue JS",
+                "Mocha",
+                "Chai",
+                "Jest",
+                "jQuery",
+                "Cypress",
+                "Pytest"
+            ]
+        },
+        {
+            "name": "Operating Systems",
+            "keywords": [
+                "Windows",
+                "Linux"
+            ]
+        },
+        {
+            "name": "Methodology",
+            "keywords": [
+                "TDD",
+                "Agile - Scrum",
+                "Agile - Kanban",
+                "Agile - SAFe"
+            ]
+        },
+        {
+            "name": "Tools/Plateforms",
+            "keywords": [
+                "Git",
+                "Postman",
+                "Jenkins",
+                "GitLab",
+                "GitHub",
+                "Docker",
+                "Kubernetes",
+                "Elasticsearch",
+                "Jira",
+                "AWS",
+                "Sonarqube"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "French",
+            "fluency": "Native"
+        },
+        {
+            "language": "English",
+            "fluency": "TOEIC 990/990"
+        }
+    ]
+}
