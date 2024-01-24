@@ -1,0 +1,179 @@
+{
+    "basics": {
+        "name": "Jacques Rimbault",
+        "label": "Développeur 5 ans d'expérience",
+        "email": "jacques.rimbault@gmail.com",
+        "phone": "+336309644882",
+        "location": {
+            "city": "Paris"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "jRimbault",
+                "url": "https://github.com/jRimbault"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "ORNESS",
+            "position": "Consultant développeur",
+            "startDate": "2021-02-28",
+            "summary": "Société Générale SGCIB:<ul><li>Développement des APIs du cloud interne.</li><li>Réalisation des APIs utilisées par les autres développeurs de la SG pour utiliser le cloud privé.</li><li>écriture de la documentation et support aux utilisateurs.</li><li>Amélioration de la suite de tests unitaire pour obtenir une meilleure couverture de certaines parties importantes</li></ul>Engie:<ul><li>Développement d'outillages pour les administrateurs réseaux et sécurité.</li><li>Réalisation d'un outil de filtrage de log du firewall et manipulation des règles du firewall.</li></ul>",
+            "highlights": [
+                "TypeScript",
+                "WebComponents",
+                "Node.js",
+                "GitHub",
+                "Jenkins",
+                "Jira",
+                "Python",
+                "React",
+                "AWS Lambda",
+                "GitHub",
+                "Jenkins",
+                "Jira"
+            ]
+        },
+        {
+            "name": "Société Générale SGCIB",
+            "position": "Développeur junior",
+            "startDate": "2018-09-01",
+            "endDate": "2019-12-31",
+            "summary": "Profilage, optimisation CPU et mémoire du logiciel Liqor<ul><li>Réalisation d'optimisations mémoires, économie de 32Go de mémoire sur une application pouvant utiliser jusqu'à un demi téraoctet de mémoire</li><li>Développement d'outillage de monitoring interne, conception API HTTP OWIN et API websocket SignalR<br>Outil utilisé pour faciliter le lancement de Liqor en sélectionnant divers paramètres que le développeur souhaite tester en particulier (data set, segment de run à tester)</li><li>Refonte des scripts d'intégration continue pour améliorer la latence entre le moment du commit et les résultats de l'intégration continue</li></ul>",
+            "highlights": [
+                "C#",
+                ".NET & .net core",
+                "TypeScript",
+                "Angular",
+                "Windows Server",
+                "Microsoft SQL Server",
+                "GitHub",
+                "TeamCity",
+                "Jira"
+            ]
+        },
+        {
+            "name": "Ministère de l'Intérieur",
+            "position": "Concepteur dévelopeur",
+            "startDate": "2016-07-01",
+            "endDate": "2018-06-31",
+            "summary": "Développement et maintenance d’une application web intranet<ul><li>Exécuté la transition de PHP 5.4 à PHP 5.6, entamé la transition vers 7.0</li><li>Participé à la mise en place d'une forge DSIC avec GitLab et Jenkins</li><li>Formation d'un apprenti</li><li>Remise aux normes de l'application:<ul><li>établir un versionnage (git)</li><li>mise en place de tests unitaires et de tests d'intégration</li></ul></li></ul>",
+            "highlights": [
+                "PHP",
+                "JavaScript",
+                "ExtJS",
+                "MySQL"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "yadf",
+            "position": "Développeur Open Source",
+            "url": "https://github.com/jRimbault/yadf",
+            "summary": "Réalisation d'un logiciel pour trouver des fichiers dupliqués sur un système moderne. Actuellement top 1 ou 2 des benchmarks sur les systèmes équipés d'un SSD.<ul><li>Contribution à la libraire rust textwrap pour la rendre ISO avec le module textwrap python dont elle est inspirée, en particulier le portage de la suite de tests unitaire pour vérifier la conformité</li><li>Contribution au logiciel rust starship pour améliorer la vitesse de démarrage et éviter une double compilation de la librairie</li><li>Contribution à la libraire rust sysinfo pour améliorer la nomenclature autour des périphériques de stockage</li></ul>",
+            "highlights": [
+                "Rust",
+                "Python",
+                "TypeScript"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "ESGI",
+            "area": "Architecture Logicielle",
+            "studyType": "Bachelor",
+            "startDate": "2016-09-01",
+            "endDate": "2019-12-31"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Langages de programmation",
+            "keywords": [
+                "C#",
+                "Rust",
+                "TypeScript",
+                "Python",
+                "Javascript",
+                "Powershell",
+                "PHP",
+                "Bash"
+            ]
+        },
+        {
+            "name": "Domaine d'intervention ou Métiers",
+            "keywords": [
+                "Developpement Front",
+                "Developpement Back",
+                "Test unitaires",
+                "Test d'intégration",
+                "Automatisation de tests"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "keywords": [
+                "Angular",
+                "React",
+                "Django",
+                "NodeJS",
+                ".net",
+                ".net core",
+                "NUnit",
+                "Bootstrap",
+                "Vue JS",
+                "Mocha",
+                "Chai",
+                "Jest",
+                "jQuery",
+                "Cypress",
+                "Pytest"
+            ]
+        },
+        {
+            "name": "Système d'exploitation",
+            "keywords": [
+                "Windows",
+                "Linux"
+            ]
+        },
+        {
+            "name": "Méthodes",
+            "keywords": [
+                "TDD",
+                "Agile - Scrum",
+                "Agile - Kanban",
+                "Agile - SAFe"
+            ]
+        },
+        {
+            "name": "Outils/Plateformes",
+            "keywords": [
+                "Git",
+                "Postman",
+                "Jenkins",
+                "GitLab",
+                "GitHub",
+                "Docker",
+                "Kubernetes",
+                "Elasticsearch",
+                "Jira",
+                "AWS",
+                "Sonarqube"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Français"
+        },
+        {
+            "language": "English",
+            "fluency": "TOEIC 990/990"
+        }
+    ]
+}

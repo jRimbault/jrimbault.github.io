@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "resumed render --theme local --output index.html"
+  },
+  "dependencies": {
+    "resumed": "^3.0.1",
+    "local": "file:./jsonresume-theme-kendall"
+  }
+}
