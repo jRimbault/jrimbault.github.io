@@ -46,7 +46,7 @@
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
           <div class="box">
-            <h2><i class= "fas fa-suitcase ico"></i> Experience</h2>
+            <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
             {{#work}}
               <div class="job clearfix">
                 <div class="row">
@@ -199,7 +199,7 @@
           {{#educationBool}}
           <!-- EDUCATION -->
           <div class="box">
-            <h2><i class="fas fa-university ico"></i> Formation</h2>
+            <h2><i class="fas fa-university ico"></i> Education</h2>
             <ul id="education" class="clearfix">
               {{#education}}
               <li>
@@ -236,7 +236,7 @@
           {{#skillsBool}}
           <!-- SKILLS -->
           <div class="box">
-            <h2><i class="fas fa-tasks ico"></i> Compétences</h2>
+            <h2><i class="fas fa-tasks ico"></i> Skills</h2>
             {{#skills}}
             <div class="skills clearfix">
               <div class="item-skills">
@@ -282,7 +282,7 @@
           {{#languagesBool}}
           <!-- LANGUAGES -->
           <div class="box">
-            <h2><i class="fas fa-language ico"></i> Langues</h2>
+            <h2><i class="fas fa-language ico"></i> Languages</h2>
             <ul class="list-group">
               {{#languages}}
               <li class=" list-group-item">{{language}}<span class="skill badge pull-right">{{fluency}}</span></li>
