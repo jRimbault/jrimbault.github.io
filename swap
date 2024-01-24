@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+swap () {
+    local tmp
+    tmp="$(mktemp)"
+    mv "$1" "$tmp" && mv "$2" "$1" && mv "$tmp" "$2"
+}
+
+swap "$1" "$2"

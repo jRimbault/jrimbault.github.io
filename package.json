@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "build": "resumed render --theme local --output index.html"
+    "build": "resumed render --theme local --output index.html",
+    "swap-template": "bash ./swap jsonresume-theme-kendall/resume-en.template jsonresume-theme-kendall/resume.template",
+    "swap-resume": "bash ./swap resume-en.json resume.json",
+    "build-en": "resumed render --theme local --output index.html"
   },
   "dependencies": {
     "resumed": "^3.0.1",
