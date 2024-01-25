@@ -7,50 +7,50 @@ var d = new Date();
 var curyear = d.getFullYear();
 
 function getMonth(startDateStr) {
-    switch (startDateStr.substr(5,2)) {
-    case '01':
-        return "January ";
-    case '02':
-        return "February ";
-    case '03':
-        return "March ";
-    case '04':
-        return "April ";
-    case '05':
-        return "May ";
-    case '06':
-        return "June ";
-    case '07':
-        return "July ";
-    case '08':
-        return "August ";
-    case '09':
-        return "September ";
-    case '10':
-        return "October ";
-    case '11':
-        return "November ";
-    case '12':
-        return "December ";
+    switch (startDateStr.substr(5, 2)) {
+        case '01':
+            return "January ";
+        case '02':
+            return "February ";
+        case '03':
+            return "March ";
+        case '04':
+            return "April ";
+        case '05':
+            return "May ";
+        case '06':
+            return "June ";
+        case '07':
+            return "July ";
+        case '08':
+            return "August ";
+        case '09':
+            return "September ";
+        case '10':
+            return "October ";
+        case '11':
+            return "November ";
+        case '12':
+            return "December ";
     }
 }
 
 function render(resumeObject) {
 
     resumeObject.basics.capitalName = resumeObject.basics.name.toUpperCase();
-    if(resumeObject.basics && resumeObject.basics.email) {
+    if (resumeObject.basics && resumeObject.basics.email) {
         resumeObject.basics.gravatar = gravatar.url(resumeObject.basics.email, {
-                        s: '200',
-                        r: 'pg',
-                        d: 'mm'
-                    });
+            s: '200',
+            r: 'pg',
+            d: 'mm'
+        });
     }
     if (resumeObject.basics.image || resumeObject.basics.gravatar) {
         resumeObject.photo = resumeObject.basics.image ? resumeObject.basics.image : resumeObject.basics.gravatar;
     }
 
-    _.each(resumeObject.basics.profiles, function(p){
-        switch(p.network.toLowerCase()) {
+    _.each(resumeObject.basics.profiles, function (p) {
+        switch (p.network.toLowerCase()) {
             // special cases
             case "google-plus":
             case "googleplus":
@@ -105,14 +105,14 @@ function render(resumeObject) {
 
     if (resumeObject.work && resumeObject.work.length) {
         resumeObject.workBool = true;
-        _.each(resumeObject.work, function(w){
+        _.each(resumeObject.work, function (w) {
             if (w.startDate) {
-                w.startDateYear = (w.startDate || "").substr(0,4);
+                w.startDateYear = (w.startDate || "").substr(0, 4);
                 w.startDateMonth = getMonth(w.startDate || "");
 
             }
-            if(w.endDate) {
-                w.endDateYear = (w.endDate || "").substr(0,4);
+            if (w.endDate) {
+                w.endDateYear = (w.endDate || "").substr(0, 4);
                 w.endDateMonth = getMonth(w.endDate || "");
             } else {
                 w.endDateYear = 'Present'
@@ -121,6 +121,7 @@ function render(resumeObject) {
                 if (w.highlights[0]) {
                     if (w.highlights[0] != "") {
                         w.boolHighlights = true;
+                        w.highlights = Array.from(new Set(w.highlights));
                     }
                 }
             }
@@ -129,14 +130,14 @@ function render(resumeObject) {
 
     if (resumeObject.volunteer && resumeObject.volunteer.length) {
         resumeObject.volunteerBool = true;
-        _.each(resumeObject.volunteer, function(w){
+        _.each(resumeObject.volunteer, function (w) {
             if (w.startDate) {
-                w.startDateYear = (w.startDate || "").substr(0,4);
+                w.startDateYear = (w.startDate || "").substr(0, 4);
                 w.startDateMonth = getMonth(w.startDate || "");
 
             }
-            if(w.endDate) {
-                w.endDateYear = (w.endDate || "").substr(0,4);
+            if (w.endDate) {
+                w.endDateYear = (w.endDate || "").substr(0, 4);
                 w.endDateMonth = getMonth(w.endDate || "");
             } else {
                 w.endDateYear = 'Present'
@@ -160,20 +161,20 @@ function render(resumeObject) {
     if (resumeObject.education && resumeObject.education.length) {
         if (resumeObject.education[0].institution) {
             resumeObject.educationBool = true;
-            _.each(resumeObject.education, function(e){
-                if( !e.area || !e.studyType ){
-                  e.educationDetail = (e.area == null ? '' : e.area) + (e.studyType == null ? '' : e.studyType);
+            _.each(resumeObject.education, function (e) {
+                if (!e.area || !e.studyType) {
+                    e.educationDetail = (e.area == null ? '' : e.area) + (e.studyType == null ? '' : e.studyType);
                 } else {
-                  e.educationDetail = e.area + ", "+ e.studyType;
+                    e.educationDetail = e.area + ", " + e.studyType;
                 }
                 if (e.startDate) {
-                    e.startDateYear = e.startDate.substr(0,4);
+                    e.startDateYear = e.startDate.substr(0, 4);
                     e.startDateMonth = getMonth(e.startDate || "");
                 } else {
                     e.endDateMonth = "";
                 }
                 if (e.endDate) {
-                    e.endDateYear = e.endDate.substr(0,4);
+                    e.endDateYear = e.endDate.substr(0, 4);
                     e.endDateMonth = getMonth(e.endDate || "")
 
                     if (e.endDateYear > curyear) {
@@ -197,9 +198,9 @@ function render(resumeObject) {
     if (resumeObject.awards && resumeObject.awards.length) {
         if (resumeObject.awards[0].title) {
             resumeObject.awardsBool = true;
-            _.each(resumeObject.awards, function(a){
-                a.year = (a.date || "").substr(0,4);
-                a.day = (a.date || "").substr(8,2);
+            _.each(resumeObject.awards, function (a) {
+                a.year = (a.date || "").substr(0, 4);
+                a.day = (a.date || "").substr(8, 2);
                 a.month = getMonth(a.date || "");
             });
         }
@@ -208,9 +209,9 @@ function render(resumeObject) {
     if (resumeObject.publications && resumeObject.publications.length) {
         if (resumeObject.publications[0].name) {
             resumeObject.publicationsBool = true;
-            _.each(resumeObject.publications, function(a){
-                a.year = (a.releaseDate || "").substr(0,4);
-                a.day = (a.releaseDate || "").substr(8,2);
+            _.each(resumeObject.publications, function (a) {
+                a.year = (a.releaseDate || "").substr(0, 4);
+                a.day = (a.releaseDate || "").substr(8, 2);
                 a.month = getMonth(a.releaseDate || "");
             });
         }
@@ -219,6 +220,7 @@ function render(resumeObject) {
     if (resumeObject.skills && resumeObject.skills.length) {
         if (resumeObject.skills[0].name) {
             resumeObject.skillsBool = true;
+            resumeObject.skills.keywords = Array.from(new Set(resumeObject.skills.keywords));
         }
     }
 
