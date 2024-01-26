@@ -1,10 +1,6 @@
 {
   "scripts": {
-    "build": "npm run build-fr && npm run build-en && cp index-en.html index.html",
-    "build-fr": "npm run swap-fr && resumed render --theme local --output index-fr.html",
-    "build-en": "npm run swap-en && resumed render --theme local --output index-en.html",
-    "swap-fr": "cp resume-fr.json resume.json && cp jsonresume-theme-kendall/resume-fr.template jsonresume-theme-kendall/resume.template",
-    "swap-en": "cp resume-en.json resume.json && cp jsonresume-theme-kendall/resume-en.template jsonresume-theme-kendall/resume.template"
+    "build": "make"
   },
   "dependencies": {
     "resumed": "^3.0.1",
