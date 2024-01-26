@@ -107,11 +107,11 @@
         {
             "name": "Professional field",
             "keywords": [
-                "Developpement Front",
-                "Developpement Back",
-                "Test unitaires",
-                "Test d'intégration",
-                "Automatisation de tests"
+                "Back end",
+                "Front end",
+                "Unit test",
+                "Integration test",
+                "Testing automatisation"
             ]
         },
         {
