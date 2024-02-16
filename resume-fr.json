@@ -18,16 +18,14 @@
     "work": [
         {
             "name": "ORNESS",
-            "position": "Consultant développeur",
+            "position": "Full stack développeur",
             "startDate": "2021-02-28",
+            "endDate": "2023-05-31",
             "summary": "Société Générale SGCIB:<ul><li>Développement des APIs du cloud interne.</li><li>Réalisation des APIs utilisées par les autres développeurs de la SG pour utiliser le cloud privé.</li><li>écriture de la documentation et support aux utilisateurs.</li><li>Amélioration de la suite de tests unitaire pour obtenir une meilleure couverture de certaines parties importantes</li></ul>Engie:<ul><li>Développement d'outillages pour les administrateurs réseaux et sécurité.</li><li>Réalisation d'un outil de filtrage de log du firewall et manipulation des règles du firewall.</li></ul>",
             "highlights": [
                 "TypeScript",
                 "WebComponents",
                 "Node.js",
-                "GitHub",
-                "Jenkins",
-                "Jira",
                 "Python",
                 "React",
                 "AWS Lambda",
@@ -38,7 +36,7 @@
         },
         {
             "name": "Société Générale SGCIB",
-            "position": "Développeur junior",
+            "position": "Développeur logiciel",
             "startDate": "2018-09-01",
             "endDate": "2019-12-31",
             "summary": "Profilage, optimisation CPU et mémoire du logiciel Liqor<ul><li>Réalisation d'optimisations mémoires, économie de 32Go de mémoire sur une application pouvant utiliser jusqu'à un demi téraoctet de mémoire</li><li>Développement d'outillage de monitoring interne, conception API HTTP OWIN et API websocket SignalR<br>Outil utilisé pour faciliter le lancement de Liqor en sélectionnant divers paramètres que le développeur souhaite tester en particulier (data set, segment de run à tester)</li><li>Refonte des scripts d'intégration continue pour améliorer la latence entre le moment du commit et les résultats de l'intégration continue</li></ul>",
@@ -56,7 +54,7 @@
         },
         {
             "name": "Ministère de l'Intérieur",
-            "position": "Concepteur dévelopeur",
+            "position": "Full stack développeur",
             "startDate": "2016-07-01",
             "endDate": "2018-06-31",
             "summary": "Développement et maintenance d’une application web intranet<ul><li>Exécuté la transition de PHP 5.4 à PHP 5.6, entamé la transition vers 7.0</li><li>Participé à la mise en place d'une forge DSIC avec GitLab et Jenkins</li><li>Formation d'un apprenti</li><li>Remise aux normes de l'application:<ul><li>établir un versionnage (git)</li><li>mise en place de tests unitaires et de tests d'intégration</li></ul></li></ul>",

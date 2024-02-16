@@ -18,16 +18,14 @@
     "work": [
         {
             "name": "ORNESS",
-            "position": "Consultant developper",
+            "position": "Full stack developper",
             "startDate": "2021-02-28",
+            "endDate": "2023-05-31",
             "summary": "Société Générale SGCIB:<ul><li>Development of internal cloud APIs</li><li>Creation of APIs used by other SG developers to use the private cloud</li><li>Writing documentation and providing user support</li><li>Improvement of the unit test suite to achieve better coverage of critical parts</li></ul>Engie:<ul><li>Development of tools for network and security administrators</li><li>Creation of a firewall log filtering tool and manipulation of firewall rules</li></ul>",
             "highlights": [
                 "TypeScript",
                 "WebComponents",
                 "Node.js",
-                "GitHub",
-                "Jenkins",
-                "Jira",
                 "Python",
                 "React",
                 "AWS Lambda",
@@ -38,7 +36,7 @@
         },
         {
             "name": "Société Générale SGCIB",
-            "position": "Junior Developper",
+            "position": "Software developper",
             "startDate": "2018-09-01",
             "endDate": "2019-12-31",
             "summary": "Profiling, CPU and memory optimization of the Liqor software<ul><li>Implementation of memory optimizations, saving 32GB of memory on an application that can use up to half a terabyte of memory</li><li>Development of internal monitoring tools, design of HTTP OWIN API and SignalR websocket API, tool used to facilitate the launch of Liqor by selecting various parameters that the developer wishes to test in particular (dataset, part of the software to test)</li><li>Redesign of continuous integration scripts to improve latency between the time of commit and the continuous integration results</li></ul>",
@@ -56,7 +54,7 @@
         },
         {
             "name": "Ministère de l'Intérieur",
-            "position": "Developper",
+            "position": "Full stack developper",
             "startDate": "2016-07-01",
             "endDate": "2018-06-31",
             "summary": "Development and maintenance of an intranet web application<ul><li>Executed the transition from PHP 5.4 to PHP 5.6, started the transition to 7.0</li><li>Participated in setting up internal GitLab and Jenkins servers</li><li>Training of an apprentice</li><li>Updating the application to comply with good practices:<ul><li>Establish version control (git)</li><li> Implementation of unit tests and integration tests</li></ul></li></ul>",
