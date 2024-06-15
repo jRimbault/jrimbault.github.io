@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Jacques Rimbault",
-        "label": "Développeur 5 ans d'expérience",
+        "label": "Développeur 6 ans d'expérience",
         "email": "jacques.rimbault@gmail.com",
         "phone": "+33630964882",
         "location": {
@@ -16,6 +16,20 @@
         ]
     },
     "work": [
+        {
+            "name": "ProvenRun",
+            "position": "Ingénieur R&D",
+            "startDate": "2024-03-18",
+            "summary": "Construction et maintenance du système d'intégration continue \"Hardware in the Loop\" de différent produits.",
+            "highlights": [
+                "Rust",
+                "Python",
+                "Yocto",
+                "Buildroot",
+                "GitLab",
+                "Pytest"
+            ]
+        },
         {
             "name": "ORNESS",
             "position": "Full stack développeur",
