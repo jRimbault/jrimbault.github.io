@@ -11,7 +11,7 @@ en/index.html: swap-en
 	@npx resumed render resume-en.json --theme local --output en/index.html
 
 swap-fr:
-	@cp jsonresume-theme-kendall/resume-fr.template jsonresume-theme-kendall/resume.template
+	@cp theme-overrides/resume-fr.template jsonresume-theme-kendall/resume.template
 
 swap-en:
-	@cp jsonresume-theme-kendall/resume-en.template jsonresume-theme-kendall/resume.template
+	@cp theme-overrides/resume-en.template jsonresume-theme-kendall/resume.template

@@ -1,0 +1,3 @@
+[submodule "jsonresume-theme-kendall"]
+	path = jsonresume-theme-kendall
+	url = https://github.com/linuxbozo/jsonresume-theme-kendall.git
