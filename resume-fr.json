@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Jacques Rimbault",
-        "label": "Développeur 6 ans d'expérience",
+        "label": "Développeur 8 ans d'expérience",
         "email": "jacques.rimbault@gmail.com",
         "phone": "+33630964882",
         "location": {
@@ -20,14 +20,19 @@
             "name": "ProvenRun",
             "position": "Ingénieur R&D",
             "startDate": "2024-03-18",
-            "summary": "Construction et maintenance du système d'intégration continue \"Hardware in the Loop\" de différent produits.",
+            "summary": "<p>Intégration continue Hardware-in-the-Loop pour produits embarqués ; construit et maintient des laboratoires de cartes distants et des pipelines de tests automatisés (Rust, Python, Yocto/Buildroot, GitLab, Pytest). Focus sur la fiabilité, la reproductibilité et l'expérience développeur : validation sur matériel réel, systèmes observables, et boucles de retour rapides</p>",
             "highlights": [
                 "Rust",
                 "Python",
                 "Yocto",
                 "Buildroot",
-                "GitLab",
-                "Pytest"
+                "GitLab CI",
+                "CI/CD",
+                "Pytest",
+                "Hardware-in-the-Loop (HIL)",
+                "Laboratoire Matériel Distant",
+                "Outillage Développeur",
+                "Expérience Développeur"
             ]
         },
         {

@@ -1,4 +1,3 @@
 *.tsbuildinfo
 node_modules/
 resume.json
-index-*.html
