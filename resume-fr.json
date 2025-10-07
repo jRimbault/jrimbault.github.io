@@ -23,7 +23,7 @@
             "endDateYear": "Aujourd'hui",
             "startDate": "2024-03-18",
             "dateRange": "Mars 2024 – Aujourd'hui",
-            "summary": "<p>Pilote l'intégration continue Hardware-in-the-Loop pour des produits embarqués.</p><ul><li>Construit et maintient des laboratoires de cartes distants et des pipelines de tests automatisés (Rust, Python, Yocto/Buildroot, GitLab, Pytest).</li><li>Conçoit des mécanismes d'observabilité et de retour qui améliorent fiabilité et reproductibilité.</li><li>Améliore l'expérience développeur grâce à la validation sur matériel réel et à des flux de travail simplifiés.</li></ul>",
+            "summary": "<p>Pilote l'intégration continue Hardware-in-the-Loop pour des produits embarqués.</p><ul><li>Construit et maintient des laboratoires de cartes distants et des pipelines de tests automatisés (Rust, Python, Yocto/Buildroot, GitLab, Pytest).</li><li>Conçoit des mécanismes d'observabilité et de retour qui améliorent fiabilité et reproductibilité.</li><li>Améliore l'expérience développeur grâce à la validation sur matériel réel et à des flux de travail simplifiés.</li><li>Rédige les politiques de développement pour Rust et Python.</li><li>Établit les standards pour les environnements Docker.</li><li>Définit les directives pour les pipelines GitLab CI/CD.</li></ul>",
             "highlights": [
                 "Rust",
                 "Python",

@@ -20,7 +20,7 @@
             "name": "ProvenRun",
             "position": "R&D engineer",
             "startDate": "2024-03-18",
-            "summary": "<p>Leads Hardware-in-the-Loop continuous integration for embedded products.</p><ul><li>Builds and maintains remote board labs and automated test pipelines (Rust, Python, Yocto/Buildroot, GitLab, Pytest).</li><li>Designs observability and feedback mechanisms that improve reliability and reproducibility.</li><li>Drives developer experience enhancements through real-hardware validation and streamlined workflows.</li></ul>",
+            "summary": "<p>Leads Hardware-in-the-Loop continuous integration for embedded products.</p><ul><li>Builds and maintains remote board labs and automated test pipelines (Rust, Python, Yocto/Buildroot, GitLab, Pytest).</li><li>Designs observability and feedback mechanisms that improve reliability and reproducibility.</li><li>Drives developer experience enhancements through real-hardware validation and streamlined workflows.</li><li>Wrote development policies for Rust and Python.</li><li>Establishes standards for Docker environments.</li><li>Defines GitLab CI/CD pipeline guidelines.</li></ul>",
             "highlights": [
                 "Rust",
                 "Python",
