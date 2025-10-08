@@ -88,9 +88,19 @@
     "volunteer": [
         {
             "organization": "yadf",
-            "position": "Open Source Developer",
+            "position": "Creator & Maintainer",
             "url": "https://github.com/jRimbault/yadf",
-            "summary": "Development of software to find duplicate files on modern systems, currently ranked first or second in SSD-based benchmarks.<ul><li>Contributed to the Rust <a href=\"https://github.com/mgeisler/textwrap\">textwrap</a> library to match the Python module by porting the unit test suite.</li><li>Improved <a href=\"https://github.com/online-go/online-go.com\">online-go.com</a> (OGS) analysis mode by persisting variations locally so reviews survive reconnects.</li><li>Improved the Rust <a href=\"https://github.com/starship/starship\">starship</a> project to accelerate startup and avoid double compilation.</li><li>Enhanced the Rust <a href=\"https://github.com/GuillaumeGomez/sysinfo\">sysinfo</a> library by refining the naming of storage devices.</li></ul>",
+            "summary": "Development of software to find duplicate files on modern systems, currently ranked first or second in SSD-based benchmarks.",
+            "highlights": [
+                "Rust",
+                "Performance optimization",
+                "File system operations"
+            ]
+        },
+        {
+            "organization": "Open Source Contributions",
+            "position": "Contributor",
+            "summary": "<ul><li>Contributed to Fedora CoreOS <a href=\"https://github.com/coreos/openssh-keys\">openssh-keys</a> library by implementing comment preservation in SSH public key parsing and adding no_std support.</li><li>Improved the Rust <a href=\"https://github.com/starship/starship\">starship</a> project to accelerate startup and avoid double compilation.</li><li>Enhanced the Rust <a href=\"https://github.com/GuillaumeGomez/sysinfo\">sysinfo</a> library by refining the naming of storage devices.</li><li>Contributed to the Rust <a href=\"https://github.com/mgeisler/textwrap\">textwrap</a> library to match the Python module by porting the unit test suite.</li><li>Improved <a href=\"https://github.com/online-go/online-go.com\">online-go.com</a> (OGS) analysis mode by persisting variations locally so reviews survive reconnects.</li></ul>",
             "highlights": [
                 "Rust",
                 "Python",

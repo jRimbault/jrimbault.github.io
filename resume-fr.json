@@ -100,11 +100,23 @@
     "volunteer": [
         {
             "organization": "yadf",
-            "position": "Développeur open source",
+            "position": "Créateur & Mainteneur",
             "endDateYear": "Aujourd'hui",
             "dateRange": "En cours",
             "url": "https://github.com/jRimbault/yadf",
-            "summary": "Développe un logiciel de déduplication pour systèmes modernes, actuellement classé parmi les premiers sur les bancs d'essai SSD.<ul><li>A contribué à la librairie Rust <a href=\"https://github.com/mgeisler/textwrap\">textwrap</a> afin de respecter le module Python en portant la suite de tests unitaires.</li><li>A fiabilisé le mode d'analyse d'<a href=\"https://github.com/online-go/online-go.com\">online-go.com</a> (OGS) en sauvegardant localement les variations pour les restaurer après reconnexion.</li><li>A amélioré le projet Rust <a href=\"https://github.com/starship/starship\">starship</a> pour accélérer le démarrage et éviter les doubles compilations.</li><li>A enrichi la librairie Rust <a href=\"https://github.com/GuillaumeGomez/sysinfo\">sysinfo</a> en affinant la nomenclature des périphériques de stockage.</li></ul>",
+            "summary": "Développe un logiciel de déduplication pour systèmes modernes, actuellement classé parmi les premiers sur les bancs d'essai SSD.",
+            "highlights": [
+                "Rust",
+                "Optimisation de performance",
+                "Opérations système de fichiers"
+            ]
+        },
+        {
+            "organization": "Contributions Open Source",
+            "position": "Contributeur",
+            "endDateYear": "Aujourd'hui",
+            "dateRange": "En cours",
+            "summary": "<ul><li>A contribué à la librairie <a href=\"https://github.com/coreos/openssh-keys\">openssh-keys</a> de Fedora CoreOS en implémentant la préservation des commentaires dans le parsing des clés publiques SSH et en ajoutant le support no_std.</li><li>A amélioré le projet Rust <a href=\"https://github.com/starship/starship\">starship</a> pour accélérer le démarrage et éviter les doubles compilations.</li><li>A enrichi la librairie Rust <a href=\"https://github.com/GuillaumeGomez/sysinfo\">sysinfo</a> en affinant la nomenclature des périphériques de stockage.</li><li>A contribué à la librairie Rust <a href=\"https://github.com/mgeisler/textwrap\">textwrap</a> afin de respecter le module Python en portant la suite de tests unitaires.</li><li>A fiabilisé le mode d'analyse d'<a href=\"https://github.com/online-go/online-go.com\">online-go.com</a> (OGS) en sauvegardant localement les variations pour les restaurer après reconnexion.</li></ul>",
             "highlights": [
                 "Rust",
                 "Python",
