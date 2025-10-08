@@ -58,7 +58,7 @@
             "position": "Software developer",
             "startDate": "2018-09-01",
             "endDate": "2019-12-31",
-            "summary": "Profiling, CPU, and memory optimization of the Liqor software<ul><li>Implemented memory optimizations that saved 32GB on an application that can use up to half a terabyte.</li><li>Developed internal monitoring tools, including an HTTP OWIN API and SignalR WebSocket API, to help launch Liqor with targeted datasets and run segments.</li><li>Redesigned continuous integration scripts to reduce the time between a commit and the reported results.</li></ul>",
+            "summary": "Profiling, CPU, and memory optimization of the Liqor software<ul><li>Implemented memory optimizations that reduced memory footprint by 32GB through targeted profiling and optimization.</li><li>Developed internal monitoring tools, including an HTTP OWIN API and SignalR WebSocket API, to help launch Liqor with targeted datasets and run segments.</li><li>Redesigned continuous integration scripts to reduce the time between a commit and the reported results.</li></ul>",
             "highlights": [
                 "C#",
                 ".NET & .net core",
@@ -121,21 +121,21 @@
         {
             "name": "Programming languages",
             "keywords": [
-                "C#",
                 "Rust",
-                "TypeScript",
                 "Python",
+                "TypeScript",
+                "C#",
                 "JavaScript",
+                "Bash",
                 "PowerShell",
-                "PHP",
-                "Bash"
+                "PHP"
             ]
         },
         {
             "name": "Professional field",
             "keywords": [
                 "Back end",
-                "Front end",
+                "Developer tooling",
                 "Unit test",
                 "Integration test",
                 "Test automation"
@@ -144,19 +144,14 @@
         {
             "name": "Frameworks",
             "keywords": [
-                "Angular",
-                "React",
                 "Django",
                 "NodeJS",
                 ".net",
                 ".net core",
                 "NUnit",
-                "Bootstrap",
-                "Vue JS",
                 "Mocha",
                 "Chai",
                 "Jest",
-                "jQuery",
                 "Cypress",
                 "Pytest"
             ]

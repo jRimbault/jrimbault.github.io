@@ -67,7 +67,7 @@
             "startDateMonth": "Septembre ",
             "endDateMonth": "Décembre ",
             "dateRange": "Septembre 2018 – Décembre 2019",
-            "summary": "Profilage et optimisation CPU et mémoire du logiciel Liqor<ul><li>Implémenté des optimisations mémoire économisant 32 Go sur une application pouvant utiliser jusqu'à un demi-téraoctet.</li><li>Développé des outils de supervision internes, dont une API HTTP OWIN et une API WebSocket SignalR, pour lancer Liqor avec des jeux de données et segments de run ciblés.</li><li>Refondu les scripts d'intégration continue afin de réduire le délai entre un commit et le retour des résultats.</li></ul>",
+            "summary": "Profilage et optimisation CPU et mémoire du logiciel Liqor<ul><li>Implémenté des optimisations mémoire réduisant l'empreinte mémoire de 32 Go grâce à un profilage et une optimisation ciblés.</li><li>Développé des outils de supervision internes, dont une API HTTP OWIN et une API WebSocket SignalR, pour lancer Liqor avec des jeux de données et segments de run ciblés.</li><li>Refondu les scripts d'intégration continue afin de réduire le délai entre un commit et le retour des résultats.</li></ul>",
             "highlights": [
                 "C#",
                 ".NET & .net core",
@@ -137,21 +137,21 @@
         {
             "name": "Langages de programmation",
             "keywords": [
-                "C#",
                 "Rust",
-                "TypeScript",
                 "Python",
+                "TypeScript",
+                "C#",
                 "JavaScript",
+                "Bash",
                 "PowerShell",
-                "PHP",
-                "Bash"
+                "PHP"
             ]
         },
         {
             "name": "Domaine d'intervention ou Métiers",
             "keywords": [
-                "Développement front-end",
                 "Développement back-end",
+                "Outillage développeur",
                 "Tests unitaires",
                 "Test d'intégration",
                 "Automatisation de tests"
@@ -160,19 +160,14 @@
         {
             "name": "Frameworks",
             "keywords": [
-                "Angular",
-                "React",
                 "Django",
                 "NodeJS",
                 ".net",
                 ".net core",
                 "NUnit",
-                "Bootstrap",
-                "Vue JS",
                 "Mocha",
                 "Chai",
                 "Jest",
-                "jQuery",
                 "Cypress",
                 "Pytest"
             ]
