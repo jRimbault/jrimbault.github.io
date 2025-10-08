@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Jacques Rimbault",
-        "label": "Développeur avec 8 ans d'expérience",
+        "label": "Développeur Rust & Python",
         "email": "jacques.rimbault@gmail.com",
         "phone": "+33630964882",
         "location": {
@@ -40,19 +40,18 @@
         },
         {
             "name": "ORNESS",
-            "position": "Développeur full stack",
+            "position": "Développeur logiciel",
             "startDate": "2021-02-28",
             "endDate": "2023-05-31",
             "startDateMonth": "Février ",
             "endDateMonth": "Mai ",
             "dateRange": "Février 2021 – Mai 2023",
-            "summary": "<p><strong>Société Générale SGCIB</strong></p><ul><li>Conçu et développé les API du cloud interne.</li><li>Livré des API permettant aux équipes SG d'exploiter le cloud privé.</li><li>Rédigé la documentation et assuré le support aux utilisateurs.</li><li>Renforcé la suite de tests unitaires pour couvrir les composants critiques.</li></ul><p><strong>Engie</strong></p><ul><li>Créé des outils pour les administrateurs réseaux et sécurité.</li><li>Livré un outil de filtrage des journaux du pare-feu et simplifié la gestion des règles.</li></ul>",
+            "summary": "<p><strong>Société Générale SGCIB</strong></p><ul><li>Développé les API du cloud interne permettant aux équipes d'exploiter l'infrastructure cloud privée.</li><li>Rédigé la documentation et assuré le support aux utilisateurs.</li><li>Renforcé la suite de tests unitaires pour couvrir les composants critiques.</li></ul><p><strong>Engie</strong></p><ul><li>Créé des outils pour les administrateurs réseaux et sécurité.</li><li>Livré un outil de filtrage des journaux du pare-feu et simplifié la gestion des règles.</li></ul>",
             "highlights": [
                 "TypeScript",
                 "WebComponents",
                 "Node.js",
                 "Python",
-                "React",
                 "AWS Lambda",
                 "GitHub",
                 "Jenkins",
@@ -67,12 +66,11 @@
             "startDateMonth": "Septembre ",
             "endDateMonth": "Décembre ",
             "dateRange": "Septembre 2018 – Décembre 2019",
-            "summary": "Profilage et optimisation CPU et mémoire du logiciel Liqor<ul><li>Implémenté des optimisations mémoire réduisant l'empreinte mémoire de 32 Go grâce à un profilage et une optimisation ciblés.</li><li>Développé des outils de supervision internes, dont une API HTTP OWIN et une API WebSocket SignalR, pour lancer Liqor avec des jeux de données et segments de run ciblés.</li><li>Refondu les scripts d'intégration continue afin de réduire le délai entre un commit et le retour des résultats.</li></ul>",
+            "summary": "<p>Profilage et optimisation CPU et mémoire du logiciel Liqor</p><ul><li>Implémenté des optimisations mémoire réduisant l'empreinte mémoire de 32 Go grâce à un profilage et une optimisation ciblés.</li><li>Développé des outils de supervision internes, dont une API HTTP OWIN et une API WebSocket SignalR, pour lancer Liqor avec des jeux de données et segments de run ciblés.</li><li>Refondu les scripts d'intégration continue afin de réduire le délai entre un commit et le retour des résultats.</li></ul>",
             "highlights": [
                 "C#",
                 ".NET & .net core",
                 "TypeScript",
-                "Angular",
                 "Windows Server",
                 "Microsoft SQL Server",
                 "GitHub",
@@ -82,17 +80,16 @@
         },
         {
             "name": "Ministère de l'Intérieur",
-            "position": "Développeur full stack",
+            "position": "Développeur logiciel",
             "startDate": "2016-07-01",
             "endDate": "2018-06-30",
             "startDateMonth": "Juillet ",
             "endDateMonth": "Juin ",
             "dateRange": "Juillet 2016 – Juin 2018",
-            "summary": "Développement et maintenance d’une application web intranet<ul><li>Piloté la transition de PHP 5.4 à 5.6 et amorcé le passage à 7.0.</li><li>Participé à la mise en place de serveurs GitLab et Jenkins internes.</li><li>Encadré un apprenti développeur.</li><li>Remis l'application en conformité avec les bonnes pratiques, notamment:<ul><li>Standardisation du versionnage avec git.</li><li>Mise en place de tests unitaires et d'intégration.</li></ul></li></ul>",
+            "summary": "<p>Développement et maintenance d'une application web intranet</p><ul><li>Piloté la transition de PHP 5.4 à 5.6 et amorcé le passage à 7.0.</li><li>Participé à la mise en place de serveurs GitLab et Jenkins internes.</li><li>Encadré un apprenti développeur.</li><li>Remis l'application en conformité avec les bonnes pratiques, notamment:<ul><li>Standardisation du versionnage avec git.</li><li>Mise en place de tests unitaires et d'intégration.</li></ul></li></ul>",
             "highlights": [
                 "PHP",
                 "JavaScript",
-                "ExtJS",
                 "MySQL"
             ]
         }
@@ -152,6 +149,8 @@
             "keywords": [
                 "Développement back-end",
                 "Outillage développeur",
+                "Systèmes embarqués",
+                "CI/CD",
                 "Tests unitaires",
                 "Test d'intégration",
                 "Automatisation de tests"
@@ -163,13 +162,15 @@
                 "Django",
                 "NodeJS",
                 ".net",
-                ".net core",
+                ".net core"
+            ]
+        },
+        {
+            "name": "Frameworks de tests",
+            "keywords": [
+                "Pytest",
                 "NUnit",
-                "Mocha",
-                "Chai",
-                "Jest",
-                "Cypress",
-                "Pytest"
+                "Cypress"
             ]
         },
         {

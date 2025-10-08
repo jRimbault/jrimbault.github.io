@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Jacques Rimbault",
-        "label": "Developer with 8 years of experience",
+        "label": "Rust & Python Developer",
         "email": "jacques.rimbault@gmail.com",
         "phone": "+33630964882",
         "location": {
@@ -37,16 +37,15 @@
         },
         {
             "name": "ORNESS",
-            "position": "Full-stack developer",
+            "position": "Software developer",
             "startDate": "2021-02-28",
             "endDate": "2023-05-31",
-            "summary": "<p><strong>Société Générale SGCIB</strong></p><ul><li>Developed internal cloud APIs.</li><li>Created APIs that enabled SG teams to operate the private cloud.</li><li>Wrote documentation and provided user support.</li><li>Improved the unit test suite to cover critical components.</li></ul><p><strong>Engie</strong></p><ul><li>Built tooling for network and security administrators.</li><li>Delivered a firewall log filtering utility and streamlined firewall rule management.</li></ul>",
+            "summary": "<p><strong>Société Générale SGCIB</strong></p><ul><li>Developed internal cloud APIs that enabled teams to operate the private cloud infrastructure.</li><li>Wrote documentation and provided user support.</li><li>Improved the unit test suite to cover critical components.</li></ul><p><strong>Engie</strong></p><ul><li>Built tooling for network and security administrators.</li><li>Delivered a firewall log filtering utility and streamlined firewall rule management.</li></ul>",
             "highlights": [
                 "TypeScript",
                 "WebComponents",
                 "Node.js",
                 "Python",
-                "React",
                 "AWS Lambda",
                 "GitHub",
                 "Jenkins",
@@ -58,12 +57,11 @@
             "position": "Software developer",
             "startDate": "2018-09-01",
             "endDate": "2019-12-31",
-            "summary": "Profiling, CPU, and memory optimization of the Liqor software<ul><li>Implemented memory optimizations that reduced memory footprint by 32GB through targeted profiling and optimization.</li><li>Developed internal monitoring tools, including an HTTP OWIN API and SignalR WebSocket API, to help launch Liqor with targeted datasets and run segments.</li><li>Redesigned continuous integration scripts to reduce the time between a commit and the reported results.</li></ul>",
+            "summary": "<p>Profiling, CPU, and memory optimization of the Liqor software</p><ul><li>Implemented memory optimizations that reduced memory footprint by 32GB through targeted profiling and optimization.</li><li>Developed internal monitoring tools, including an HTTP OWIN API and SignalR WebSocket API, to help launch Liqor with targeted datasets and run segments.</li><li>Redesigned continuous integration scripts to reduce the time between a commit and the reported results.</li></ul>",
             "highlights": [
                 "C#",
                 ".NET & .net core",
                 "TypeScript",
-                "Angular",
                 "Windows Server",
                 "Microsoft SQL Server",
                 "GitHub",
@@ -73,14 +71,13 @@
         },
         {
             "name": "Ministère de l'Intérieur",
-            "position": "Full-stack developer",
+            "position": "Software developer",
             "startDate": "2016-07-01",
             "endDate": "2018-06-30",
-            "summary": "Development and maintenance of an intranet web application<ul><li>Led the transition from PHP 5.4 to 5.6 and initiated the move to 7.0.</li><li>Helped set up internal GitLab and Jenkins servers.</li><li>Mentored an apprentice developer.</li><li>Updated the application to align with good practices, including:<ul><li>Standardized version control with git.</li><li>Introduced unit and integration tests.</li></ul></li></ul>",
+            "summary": "<p>Development and maintenance of an intranet web application</p><ul><li>Led the transition from PHP 5.4 to 5.6 and initiated the move to 7.0.</li><li>Helped set up internal GitLab and Jenkins servers.</li><li>Mentored an apprentice developer.</li><li>Updated the application to align with good practices, including:<ul><li>Standardized version control with git.</li><li>Introduced unit and integration tests.</li></ul></li></ul>",
             "highlights": [
                 "PHP",
                 "JavaScript",
-                "ExtJS",
                 "MySQL"
             ]
         }
@@ -136,6 +133,8 @@
             "keywords": [
                 "Back end",
                 "Developer tooling",
+                "Embedded systems",
+                "CI/CD",
                 "Unit test",
                 "Integration test",
                 "Test automation"
@@ -147,13 +146,15 @@
                 "Django",
                 "NodeJS",
                 ".net",
-                ".net core",
+                ".net core"
+            ]
+        },
+        {
+            "name": "Testing frameworks",
+            "keywords": [
+                "Pytest",
                 "NUnit",
-                "Mocha",
-                "Chai",
-                "Jest",
-                "Cypress",
-                "Pytest"
+                "Cypress"
             ]
         },
         {
